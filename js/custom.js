@@ -36,7 +36,6 @@ function jsCustomizeBibTemplate(dom){
 }
 
 function jsCustomizeBibDisplay(dom){
-  console.log(dom);
   $(dom).find('.sort.title').each(function(groupIdx){
     var val=$(this).find('.templates');
     $(this).html(val);
@@ -88,7 +87,6 @@ $( document ).ready(function() {
 
 function setTextResize(){
   $('body').removeClass('fontReduced-2').removeClass('fontReduced-1');
-  console.log($(window).width());
         if ($(window).width()<700) $('body').addClass('fontReduced-2');
   else  if ($(window).width()<1024) $('body').addClass('fontReduced-1');
 
@@ -105,10 +103,10 @@ $(document).ready(function(){
   setTextResize();
 
   $(window).on('wheel',function(ev) {
-    console.log(ev.originalEvent.deltaY);
-    console.log($('section.active .content')[0].scrollTop);
-    console.log($('section.active .content').height());
-    console.log($('section.active .content .container').height());
+    // console.log(ev.originalEvent.deltaY);
+    // console.log($('section.active .content')[0].scrollTop);
+    // console.log($('section.active .content').height());
+    // console.log($('section.active .content .container').height());
     maxScroll=Math.min(Math.max(maxScroll,ev.originalEvent.deltaY),400);
     if(($('section.active .content')[0].scrollTop
         +$('section.active .content').height()+10>
@@ -125,6 +123,13 @@ $(document).ready(function(){
 
 
 })
+
+  $(window).on('slideChange',function(){
+      setTimeout(function(){
+          var page_path=window.location.pathname + window.location.search + window.location.hash;
+          gtag('config', GA_MEASUREMENT_ID, {'page_path': page_path});
+      },window.effectSpeed);
+  });
 
 
   
