@@ -109,7 +109,7 @@ $(document).ready(function(){
     console.log($('section.active .content')[0].scrollTop);
     console.log($('section.active .content').height());
     console.log($('section.active .content .container').height());
-    maxScroll=Math.min(Math.max(maxScroll,ev.originalEvent.deltaY),240);
+    maxScroll=Math.min(Math.max(maxScroll,ev.originalEvent.deltaY),400);
     if(($('section.active .content')[0].scrollTop
         +$('section.active .content').height()+10>
          $('section.active .content .container').height())
@@ -118,7 +118,7 @@ $(document).ready(function(){
     }
 
     if(($('section.active .content')[0].scrollTop<10)
-          && (ev.originalEvent.deltaY<-50)){
+          && (ev.originalEvent.deltaY<-Math.abs(maxScroll/2))){
         window.changeSlide("decrease");
     }
   });

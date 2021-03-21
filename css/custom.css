@@ -112,6 +112,11 @@
     padding: 0 5px;
 }
 
+.quoteBubble.right:after{
+    left:unset;
+    right:6%;
+}
+
 
 .fontReduced-1 p.largest,  .fontReduced-1 .p.largest  {font-size: 24px;}
 .fontReduced-1 p.larger,   .fontReduced-1 .p.larger   {font-size: 21px;}
