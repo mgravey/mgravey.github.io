@@ -1,0 +1,160 @@
+:root{
+    --y-offset: 0px;
+}
+
+.justify, .container .wrap .justify
+{
+    text-align:justify!important
+}
+
+.two-col{
+	max-height: 650px;flex-direction: column;
+}
+
+.project-im{
+	float: right;
+	width: min( 200px, 30vw);
+    position: relative;
+    /*top: -23px;*/
+}
+
+@media only screen and (max-width: 1024px) {
+  .two-col{
+    max-height:inherit;
+  }
+}
+
+.tb .progress-bar {
+    left: unset;
+    height: unset;
+    width: unset;
+    transition: unset;
+    z-index: unset;
+    opacity: unset;
+}
+.tb .progress-bar, .side {
+    position: unset;
+    top: unset;
+}
+
+.aProject > .progress{
+	height: 6px;
+    position: relative;
+    top: -1px;
+    border-radius:0;
+	width: calc(100% + 1px);
+}
+
+
+.aProject{
+    background-color: #000000ab;
+/*    border-color: #ffffffb0;
+    border-width: 2px;
+    border-style: solid;*/
+
+    margin: 10px;
+}
+
+.aCode{
+    background-color: #222222aa;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.tb .bg-mps {
+	background-image: linear-gradient(17deg, rgba(255, 0, 0, 0.7), rgba(0, 0, 255, 0.7));
+}
+
+.tb .bg-rs {
+	background-image: linear-gradient(20deg, rgba(0, 174, 26, 0.7),  rgba(0, 53, 195, 0.7));
+}
+
+.tb .bg-colabor {
+	background-color: white;
+	color: black;
+}
+
+.tb .bg-side {
+     background-color: #ffc107cc;
+     color: black;
+}
+
+.tb .bg-LTS {
+     background-color: #00ffffcc;
+     color: black;
+}
+
+/*#projectList{
+    height: 75vh;
+    overflow-y: auto;
+}
+
+#bibtex_display, #ExpAndSkill{
+    overflow-y: auto;
+    height: 85vh;
+}*/
+
+.tb .btn-group > .btn:not(:first-child), .tb .btn-group > .btn-group:not(:first-child) {
+    margin-top: -1px;
+}
+
+.container .wrap.noSpaces{
+    padding: 80px 15px;
+}
+
+.aCode .logo{
+    height: 27px;
+    padding: 0 5px;
+}
+
+.CodeAndSoftware label img.logo{
+    height: 27px;
+    padding: 0 5px;
+}
+
+
+.fontReduced-1 p.largest,  .fontReduced-1 .p.largest  {font-size: 24px;}
+.fontReduced-1 p.larger,   .fontReduced-1 .p.larger   {font-size: 21px;}
+.fontReduced-1 p.large,    .fontReduced-1 .p.large    {font-size: 18px;}
+.fontReduced-1 p,          .fontReduced-1 .p          {font-size: 16px;}
+.fontReduced-1 p.small,    .fontReduced-1 .p.small    {font-size: 14px;}
+.fontReduced-1 p.smaller,  .fontReduced-1 .p.smaller  {font-size: 12px;}
+.fontReduced-1 p.smallest, .fontReduced-1 .p.smallest {font-size: 11px;}
+.fontReduced-1 p.micro,    .fontReduced-1 .p.micro    {font-size: 9px;}
+
+.fontReduced-2 p.largest,  .fontReduced-2 .p.largest  {font-size: 21px;}
+.fontReduced-2 p.larger,   .fontReduced-2 .p.larger   {font-size: 18px;}
+.fontReduced-2 p.large,    .fontReduced-2 .p.large    {font-size: 16px;}
+.fontReduced-2 p,          .fontReduced-2 .p          {font-size: 14px;}
+.fontReduced-2 p.small,    .fontReduced-2 .p.small    {font-size: 12px;}
+.fontReduced-2 p.smaller,  .fontReduced-2 .p.smaller  {font-size: 11px;}
+.fontReduced-2 p.smallest, .fontReduced-2 .p.smallest {font-size: 9px;}
+.fontReduced-2 p.micro,    .fontReduced-2 .p.micro    {font-size: 7px;}
+
+span.fontForced.largest,  .span.fontForced.largest  {font-size: 27px;}
+span.fontForced.larger,   .span.fontForced.larger   {font-size: 24px;}
+span.fontForced.large,    .span.fontForced.large    {font-size: 21px;}
+span.fontForced,          .span.fontForced          {font-size: 18px;}
+span.fontForced.small,    .span.fontForced.small    {font-size: 16px;}
+span.fontForced.smaller,  .span.fontForced.smaller  {font-size: 14px;}
+span.fontForced.smallest, .span.fontForced.smallest {font-size: 12px;}
+span.fontForced.micro,    .span.fontForced.micro    {font-size: 11px;}
+
+.fontReduced-1 span.fontForced.largest,  .fontReduced-1 .span.fontForced.largest  {font-size: 24px;}
+.fontReduced-1 span.fontForced.larger,   .fontReduced-1 .span.fontForced.larger   {font-size: 21px;}
+.fontReduced-1 span.fontForced.large,    .fontReduced-1 .span.fontForced.large    {font-size: 18px;}
+.fontReduced-1 span.fontForced,          .fontReduced-1 .span.fontForced          {font-size: 16px;}
+.fontReduced-1 span.fontForced.small,    .fontReduced-1 .span.fontForced.small    {font-size: 14px;}
+.fontReduced-1 span.fontForced.smaller,  .fontReduced-1 .span.fontForced.smaller  {font-size: 12px;}
+.fontReduced-1 span.fontForced.smallest, .fontReduced-1 .span.fontForced.smallest {font-size: 11px;}
+.fontReduced-1 span.fontForced.micro,    .fontReduced-1 .span.fontForced.micro    {font-size: 9px;}
+
+.fontReduced-2 span.fontForced.largest,  .fontReduced-2 .span.fontForced.largest  {font-size: 21px;}
+.fontReduced-2 span.fontForced.larger,   .fontReduced-2 .span.fontForced.larger   {font-size: 18px;}
+.fontReduced-2 span.fontForced.large,    .fontReduced-2 .span.fontForced.large    {font-size: 16px;}
+.fontReduced-2 span.fontForced,          .fontReduced-2 .span.fontForced          {font-size: 14px;}
+.fontReduced-2 span.fontForced.small,    .fontReduced-2 .span.fontForced.small    {font-size: 12px;}
+.fontReduced-2 span.fontForced.smaller,  .fontReduced-2 .span.fontForced.smaller  {font-size: 11px;}
+.fontReduced-2 span.fontForced.smallest, .fontReduced-2 .span.fontForced.smallest {font-size: 9px;}
+.fontReduced-2 span.fontForced.micro,    .fontReduced-2 .span.fontForced.micro    {font-size: 7px;}
+
