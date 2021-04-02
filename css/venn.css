@@ -8,7 +8,7 @@
   --venn-fact: 0.45;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
 	:root {
 	  --venn-fact: 0.8;
 	}
