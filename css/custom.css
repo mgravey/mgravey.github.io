@@ -163,3 +163,15 @@ span.fontForced.micro,    .span.fontForced.micro    {font-size: 11px;}
 .fontReduced-2 span.fontForced.smallest, .fontReduced-2 .span.fontForced.smallest {font-size: 9px;}
 .fontReduced-2 span.fontForced.micro,    .fontReduced-2 .span.fontForced.micro    {font-size: 7px;}
 
+@media only screen and (min-width: 1140px) {
+    nav.panel.top{
+        backdrop-filter: blur(6px);
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0 0 0 / 0%)), color-stop(0.5, black), to(rgb(255 255 255 / 0%)));
+    /*    mask: url('#mask-linear');
+        filter: url('#filtre2');*/
+    }
+}
+
+nav p {
+    margin-bottom:0;
+}
