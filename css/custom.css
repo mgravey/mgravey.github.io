@@ -61,12 +61,22 @@
     margin: 10px;
 }
 
+.aSProject {
+    background-color: #222222aa;
+    border-radius: 50px;
+    margin: 10px;
+}
+
 .tb .bg-mps {
 	background-image: linear-gradient(17deg, rgba(255, 0, 0, 0.7), rgba(0, 0, 255, 0.7));
 }
 
 .tb .bg-rs {
 	background-image: linear-gradient(20deg, rgba(0, 174, 26, 0.7),  rgba(0, 53, 195, 0.7));
+}
+
+.tb .bg-ml {
+    background-image: linear-gradient(20deg, rgba(197,72, 43, 0.7), rgba(222,129,3, 0.7));
 }
 
 .tb .bg-colabor {
@@ -103,6 +113,11 @@
 }
 
 .aCode .logo{
+    height: 27px;
+    padding: 0 5px;
+}
+
+.aSProject .logo{
     height: 27px;
     padding: 0 5px;
 }

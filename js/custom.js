@@ -66,8 +66,6 @@ $( document ).ready(function() {
     }
   });
 
-
-
   $(function() {
     $(".aCode").sort(sort_proj).appendTo('#codeList');
     function sort_proj(a, b) {
@@ -83,6 +81,26 @@ $( document ).ready(function() {
       $('.aCode').filter('.'+this.value).removeClass('animate__zoomOut').addClass('animate__zoomIn').slideDown(1000);
     }
   });
+
+
+  $(function() {
+    $(".aSProject").sort(sort_proj).appendTo('#studentProjectList');
+    function sort_proj(a, b) {
+      return ($(b).attr('data-level')) < ($(a).attr('data-level')) ? 1 : -1;
+    }
+  });
+  $('.aSProject').addClass('animate__animated').addClass('animate__zoomIn')
+  $('input[type=radio][name=studentProjSelect]').change(function() {
+    if (this.value == 'all') {
+        $('.aSProject').removeClass('animate__zoomOut').addClass('animate__zoomIn').slideDown(1000);
+    }else{
+      $('.aSProject').filter(':not(.'+this.value+')').removeClass('animate__zoomIn').addClass('animate__zoomOut').slideUp(1000);
+      $('.aSProject').filter('.'+this.value).removeClass('animate__zoomOut').addClass('animate__zoomIn').slideDown(1000);
+    }
+  });
+
+
+
 });
 
 function setTextResize(){
