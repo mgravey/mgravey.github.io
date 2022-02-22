@@ -2160,7 +2160,7 @@
  .tb .input-group .btn:focus {
 	 z-index: 3;
 }
- .tb .input-group-text {
+/* .tb .input-group-text {
 	 display: flex;
 	 align-items: center;
 	 padding: 0.375rem 0.75rem;
@@ -2199,7 +2199,7 @@
 	 margin-left: -1px;
 	 border-top-left-radius: 0;
 	 border-bottom-left-radius: 0;
-}
+}*/
  .tb .valid-feedback {
 	 display: none;
 	 width: 100%;
