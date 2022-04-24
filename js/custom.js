@@ -20,6 +20,9 @@ function loadDaatFromDois(doiList){
         Accept: "application/x-bibtex",         
       },
       success:function(data){
+        console.log(data)
+        data=data.replaceAll('$\\less$','<')
+        data=data.replaceAll('$\\greater$','>')
         generatedBib+=data;
         cpt++;
         if(cpt==doiList.length){
