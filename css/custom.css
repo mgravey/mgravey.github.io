@@ -190,3 +190,7 @@ span.fontForced.micro,    .span.fontForced.micro    {font-size: 11px;}
 nav p {
     margin-bottom:0;
 }
+
+#ExpAndSkill tr:nth-child(2n), #ExpAndSkill ul:nth-child(2n) {
+    background: repeating-linear-gradient(90deg, transparent, #ffffff10 20%, #ffffff10 80%, transparent);
+}
