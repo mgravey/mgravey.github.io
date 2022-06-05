@@ -108,6 +108,10 @@
     margin-top: -1px;
 }
 
+.tb .btn{
+    margin-bottom: 4px;
+}
+
 .container .wrap.noSpaces{
     padding: 80px 15px;
 }
@@ -178,12 +182,19 @@ span.fontForced.micro,    .span.fontForced.micro    {font-size: 11px;}
 .fontReduced-2 span.fontForced.smallest, .fontReduced-2 .span.fontForced.smallest {font-size: 9px;}
 .fontReduced-2 span.fontForced.micro,    .fontReduced-2 .span.fontForced.micro    {font-size: 7px;}
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 1545px) {
     nav.panel.top{
         backdrop-filter: blur(6px);
         -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgb(0 0 0 / 0%)), color-stop(0.5, black), to(rgb(255 255 255 / 0%)));
     /*    mask: url('#mask-linear');
         filter: url('#filtre2');*/
+    }
+}
+
+@media only screen and (max-width: 1544px){
+    nav.panel.top .left p.largest.bold{
+        backdrop-filter: blur(6px);
+        -webkit-mask-image: radial-gradient(ellipse 400px 57% at 0px 50%, hsl(0deg 0% 0%) 60%, hsl(0deg 0% 0% / 0%) 100%);
     }
 }
 
