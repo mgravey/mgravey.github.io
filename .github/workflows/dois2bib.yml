@@ -11,7 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: apt-get install parallel jq curl -y
-      - run: cat assets/dois.json| jq -r '.[]' | parallel -j8 "(curl -s -LH 'Accept: application/x-bibtex' 'https://doi.org/{}'; echo )"> assets/mg.bib
+      - run: |
+        cat assets/dois.json| jq -r '.[]' | parallel -j8 "(curl -s -LH 'Accept: application/x-bibtex' 'https://doi.org/{}'; echo )"> assets/mg.bib
       - uses: EndBug/add-and-commit@v9
         with:
           add: 'assets/mg.bib'
