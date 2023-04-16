@@ -13,6 +13,7 @@ jobs:
       - run: cat assets/dois.json| jq -r '.[]' | parallel -j8 -k "(curl -s -LH 'Accept:application/x-bibtex' 'https://doi.org/{}'; echo )"> assets/mg_temp.bib
       - run: awk '/^@.*,$/ {gsub(/,/, "_"count++ ",")} {print}' assets/mg_temp.bib > assets/mg.bib
       - run: sed -i 's/\$\\greater\$/>/g; s/\$\\less\$/</g' assets/mg.bib  
+      - run: sed -i 's/\$[^$]*\$//g' assets/mg.bib
       - uses: EndBug/add-and-commit@v9
         with:
           add: 'assets/mg.bib'
