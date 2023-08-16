@@ -205,3 +205,12 @@ nav p {
 #ExpAndSkill tr:nth-child(2n), #ExpAndSkill ul:nth-child(2n) {
     background: repeating-linear-gradient(90deg, transparent, #ffffff10 20%, #ffffff10 80%, transparent);
 }
+
+.advices{
+    text-align: justify;
+}
+
+.advices li{
+    list-style: lower-greek;
+}
+
