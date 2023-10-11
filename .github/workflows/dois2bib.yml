@@ -1,6 +1,7 @@
 name: convert DOIs json arrax to bib file
 on:
   workflow_dispatch:
+    
   push:
     paths:
       - assets/dois.json
