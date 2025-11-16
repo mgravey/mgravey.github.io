@@ -106,6 +106,15 @@
       barba.hooks.after(() => { document.documentElement.classList.remove('is-transitioning'); });
 
       barba.init({
+        prevent: ({ href }) => {
+          try{
+            var link = new URL(href, window.location.href);
+            var curr = new URL(window.location.href);
+            var norm = function(u){ var p = u.pathname; if(!p.endsWith('/')) p += '/'; return u.origin + p + u.search; };
+            if(link.origin === curr.origin && norm(link) === norm(curr)) return true; // prevent same-page
+          }catch(err){}
+          return false;
+        },
         transitions: [{
           name: effect,
           sync: true,

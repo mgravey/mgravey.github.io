@@ -17,4 +17,22 @@
     // Also close before Barba transition just in case
     if(window.barba && barba.hooks){ try{ barba.hooks.before(close); }catch(e){} }
   });
+  // Prevent navigation/animation if clicking a link to the current page
+  document.addEventListener('click', function(e){
+    var a = e.target.closest && e.target.closest('a');
+    if(!a) return;
+    // ignore external and hash-only links
+    var href = a.getAttribute('href') || '';
+    if(href.startsWith('#')) return;
+    try{
+      var link = new URL(a.href, window.location.href);
+      var curr = new URL(window.location.href);
+      var norm = function(u){ var p = u.pathname; if(!p.endsWith('/')) p += '/'; return u.origin + p + u.search; };
+      if(link.origin === curr.origin && norm(link) === norm(curr)){
+        e.preventDefault();
+        e.stopPropagation();
+        return false;
+      }
+    }catch(err){}
+  }, true);
 })();
