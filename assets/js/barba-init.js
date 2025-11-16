@@ -99,6 +99,8 @@
   document.addEventListener('DOMContentLoaded', function(){
     if(!window.barba){ runInit(); return; }
     var effect = (document.documentElement.getAttribute('data-transition') || 'slide').toLowerCase();
+    // Sync background fade duration with page transition duration
+    try{ document.documentElement.style.setProperty('--bg-fade', DURATION + 'ms'); }catch(e){}
     try{
       barba.hooks.before(() => { document.documentElement.classList.add('is-transitioning'); });
       barba.hooks.after(() => { document.documentElement.classList.remove('is-transitioning'); });

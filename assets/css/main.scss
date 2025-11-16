@@ -70,7 +70,7 @@ main{ position:relative; flex:1 0 auto; padding-bottom: 60px; min-height: calc(1
   background-image: var(--bg-image, none);
   background-attachment: fixed; filter: saturate(105%) contrast(105%);
   will-change: opacity; pointer-events:none;
-  opacity:0; transition: opacity .6s ease;
+  opacity:0; transition: opacity var(--bg-fade, 600ms) ease;
 }
 .bg-layer.is-active{ opacity:1; }
 
