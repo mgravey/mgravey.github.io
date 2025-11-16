@@ -1,0 +1,19 @@
+<header class="site-header">
+  <div class="nav-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <button class="burger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="nav">
+      <ul>
+        {% assign items = site.data.nav %}
+        {% for item in items %}
+          {% if item.show != false %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
+
