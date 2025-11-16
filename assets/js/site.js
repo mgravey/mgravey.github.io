@@ -45,13 +45,16 @@
       t.addEventListener('click', (e) => {
         const id = t.getAttribute('data-popup-id');
         const popup = document.querySelector('.popup[data-popup-id="'+id+'"]');
-        if(popup){ popup.style.display = 'block'; }
+        if(popup){ popup.style.display = 'flex'; }
       });
     });
     // Close buttons and backdrop
     $(".popup").forEach(p => {
       p.addEventListener('click', (e) => {
-        if(e.target.classList.contains('popup') || e.target.classList.contains('popup-close')){
+        const clickedBackdrop = e.target.classList.contains('popup');
+        const clickedClose = e.target.classList.contains('popup-close');
+        const clickedImage = !!(e.target.closest && e.target.closest('.popup-inner img'));
+        if(clickedBackdrop || clickedClose || clickedImage){
           p.style.display = 'none';
         }
       });

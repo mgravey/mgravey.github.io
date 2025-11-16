@@ -7,7 +7,6 @@ bg_image: /assets/img/background/berezina.jpg
 
 {% include render_filters.html scope='publications' %}
 
-Below is an auto-generated list from DOIs in `_data/dois.yml`, grouped by year. My name is highlighted in bold. You can add optional `flags` and `rank` per DOI to support filtering and ordering.
 
 {% if site.data.publications and site.data.publications.size > 0 %}
   {% assign pubs = site.data.publications %}

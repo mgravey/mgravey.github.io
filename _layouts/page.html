@@ -6,7 +6,6 @@ layout: default
   {% if page.subtitle %}<p class="page-subtitle">{{ page.subtitle }}</p>{% endif %}
 </section>
 
-<section class="page-content">
+<section class="page-content {{ page.page_class }}">
   {{ content }}
 </section>
-
