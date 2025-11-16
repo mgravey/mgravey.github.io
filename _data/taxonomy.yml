@@ -1,0 +1,103 @@
+groups:
+  projects: [status, topic]
+  code: [language, topic, status]
+  publications: [flags]
+
+tags:
+  # Topics
+  - key: mps
+    label: Multiple-point statistics
+    groups: [topic, flags]
+  - key: web
+    label: Web
+    groups: [topic]
+  - key: other
+    label: Other
+    groups: [topic]
+  - key: rs
+    label: Remote-sensing
+    groups: [topic, flags]
+  - key: geospatial
+    label: Geospatial
+    groups: [topic]
+  - key: web
+    label: Web
+    groups: [topic]
+  - key: other
+    label: Other
+    groups: [topic]
+
+  # Publication flags
+  - key: geostatistics
+    label: Geostatistics
+    groups: [flags]
+  - key: simulation
+    label: Simulation
+    groups: [flags]
+  - key: high-impact
+    label: High Impact
+    groups: [flags]
+  - key: method
+    label: Method
+    groups: [flags]
+  - key: ml
+    label: Machine Learning
+    groups: [flags]
+  - key: code
+    label: Code
+    groups: [flags]
+  - key: landslide
+    label: Landslide
+    groups: [flags]
+  - key: ecology
+    label: Ecology
+    groups: [flags]
+  - key: climate
+    label: Climate
+    groups: [flags]
+  - key: hydrology
+    label: Hydrology
+    groups: [flags]
+  - key: glacier
+    label: Glacier
+    groups: [flags]
+  - key: dataset
+    label: Dataset
+    groups: [flags]
+  - key: first-author
+    label: First Author
+    groups: [flags]
+  - key: last-author
+    label: Last Author
+    groups: [flags]
+
+  # Status
+  - key: maintained
+    label: Maintained
+    groups: [status]
+  - key: finished
+    label: Finished
+    groups: [status]
+  - key: ongoing
+    label: Ongoing
+    groups: [status]
+  - key: colabor
+    label: Collaboration
+    groups: [status]
+  - key: side
+    label: Side project
+    groups: [status]
+
+  # Languages / Tech (with logos)
+  - key: python
+    label: Python
+    groups: [language]
+    logo: /assets/logo/Python.svg
+  - key: matlab
+    label: Matlab
+    groups: [language]
+    logo: /assets/logo/Matlab.png
+  - key: gee
+    label: Google Earth Engine
+    groups: [language]
+    logo: /assets/logo/GEE.png

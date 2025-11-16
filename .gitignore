@@ -1,3 +1,4 @@
 *.DS_Store
 assets/img/background/image
 /_site
+/node_modules

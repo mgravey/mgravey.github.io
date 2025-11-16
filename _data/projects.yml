@@ -1,0 +1,221 @@
+- title: "QuickSampling: an efficient and robust MPS approach"
+  rank: 10
+  year_start: 2017
+  year_finish: 2020
+  tags: [finished, mps, maintained, python]
+  image: https://gmd.copernicus.org/articles/13/2611/2020/gmd-13-2611-2020-avatar-web.png
+  progress:
+    code: 60
+    docs: 10
+    pub: 30
+  links:
+    code: https://github.com/GAIA-UNIL/G2S
+    docs:
+      - label: Guide
+        url: https://gaia-unil.github.io/G2S/
+    pubs:
+      - label: GMD 2020
+        url: https://doi.org/10.5194/gmd-13-2611-2020
+
+- title: "AutoQS: Automated QuickSampling pipelines"
+  rank: 20
+  year_start: 2019
+  year_finish: 2021
+  tags: [maintained, mps, python]
+  image: /assets/img/numberSymbole/test.png
+  progress:
+    code: 75
+    docs: 40
+    pub: 50
+  links:
+    code: https://github.com/example/autoqs
+    docs:
+      - label: Docs
+        url: https://example.org/autoqs
+    pubs:
+      - label: Preprint
+        url: https://doi.org/10.0000/example
+
+# Imported from provided list
+- title: "Satellite image colorization"
+  rank: 15
+  year_start: 2016
+  year_finish: 2018
+  tags: [finished, mps, rs]
+  image: /assets/imageContent/NDS.jpg
+  description: >-
+    The main output of this project is an algorithm — Narrow Distribution Selection (NDS) — to spectrally enhance remotely sensed satellite images, similar in spirit to QuickSampling.
+  progress:
+    code: 50
+    docs: 10
+    pub: 40
+  links:
+    code: https://github.com/GAIA-UNIL/G2S
+    docs:
+      - label: Guide
+        url: https://gaia-unil.github.io/G2S/
+    pubs:
+      - label: ISPRS 2018
+        url: https://doi.org/10.1016/j.isprsjprs.2018.11.003
+
+- title: "Auto QS: Training image based automatic calibration of direct-pixel MPS algorithm"
+  rank: 12
+  year_start: 2019
+  year_finish: 2023
+  tags: [ongoing, mps, maintained]
+  description: >-
+    Alternative calibration for QS/DS based on training image analysis to reduce verbatim copy without complex objective functions.
+  progress:
+    code: 60
+    docs: 10
+    pub: 30
+  links:
+    code: https://github.com/GAIA-UNIL/G2S
+    docs:
+      - label: AutoQS Docs
+        url: https://gaia-unil.github.io/G2S/algorithms/AutoQS.html
+    pubs:
+      - label: GMD 2023
+        url: https://doi.org/10.5194/gmd-16-5265-2023
+
+- title: "Effect of resolution change on remote sensed analysis"
+  rank: 18
+  year_start: 2020
+  year_finish: 2022
+  tags: [ongoing, rs]
+  description: >-
+    Exploring effects and errors introduced by spatial resolution changes in remote sensing applications.
+  progress:
+    code: 25
+    docs: 0
+    pub: 70
+
+- title: "FastDS"
+  rank: 22
+  year_start: 2019
+  year_finish: 
+  tags: [ongoing, colabor, mps, side]
+  description: >-
+    Enhances Direct Sampling by predicting potential candidates to avoid trivial mismatches — akin to moving from naive rejection sampling to adaptive sampling.
+  progress:
+    code: 50
+    docs: 0
+    pub: 30
+
+- title: "Snow-Vegetation trend in the Alps"
+  rank: 25
+  year_start: 2017
+  year_finish: 2022
+  tags: [finished, colabor, rs, side]
+  description: >-
+    Studying the evolution of snow and vegetation over the last 35+ years in the Alps.
+  progress:
+    code: 80
+    docs: 0
+    pub: 20
+  links:
+    pubs:
+      - label: Science 2022
+        url: https://doi.org/10.1126/science.abn6697
+
+- title: "Cheetah"
+  rank: 28
+  year_start: 2019
+  year_finish: 
+  tags: [ongoing, mps, side]
+  description: >-
+    From Impala and SNESIM: encode a k‑class n‑point pattern in k n‑bit numbers; exploring FPGA for performance and power gains.
+  progress:
+    code: 25
+    docs: 0
+    pub: 0
+
+- title: "MAZAlib"
+  rank: 30
+  year_start: 2020
+  year_finish: 
+  tags: [ongoing, colabor, side]
+  description: >-
+    Tools and interfaces to segment porous media scans easily.
+  progress:
+    code: 80
+    docs: 0
+    pub: 20
+
+- title: "Tracking of vegetation evolution (growth) in Vietnam"
+  rank: 24
+  year_start: 2019
+  year_finish: 
+  tags: [ongoing, colabor, rs, side]
+  description: >-
+    Tracking the type and growth of vegetation in Vietnam.
+  progress:
+    code: 80
+    docs: 0
+    pub: 20
+  links:
+    docs:
+      - label: Website
+        url: https://www.ftviet.info
+    pubs:
+      - label: Land Use Policy 2023
+        url: https://doi.org/10.1016/j.landusepol.2023.106887
+
+- title: "Glacier tracking"
+  rank: 26
+  year_start: 2017
+  year_finish: 2018
+  tags: [finished, colabor, rs, side]
+  description: >-
+    High-frequency, high-resolution time series of Gornergletscher from repeated UAV surveys; implemented the tracking algorithm.
+  progress:
+    code: 70
+    docs: 0
+    pub: 30
+  links:
+    code: https://github.com/GAIA-UNIL/MatchingMapMaker
+    pubs:
+      - label: ESSD 2018
+        url: https://doi.org/10.5194/essd-2018-145
+
+- title: "Open Earth Engine Library"
+  rank: 23
+  year_start: 2020
+  year_finish: 2021
+  tags: [finished, rs, side, maintained]
+  image: https://www.open-geocomputing.org/OpenEarthEngineLibrary/logo_white.svg
+  description: >-
+    The Open Earth Engine Library (OEEL) provides free and open algorithms for Google Earth Engine users.
+  progress:
+    code: 60
+    docs: 40
+    pub: 0
+  links:
+    code: https://github.com/open-geocomputing/OpenEEL_Examples
+    docs:
+      - label: Website
+        url: https://www.open-geocomputing.org/OpenEarthEngineLibrary/
+
+- title: "Tracking bird migration using pressure"
+  rank: 21
+  year_start: 2021
+  year_finish: 2022
+  tags: [ongoing, colabor]
+  description: >-
+    This project uses pressure instead of light to determine the position of birds during migration.
+  progress:
+    code: 70
+    docs: 10
+    pub: 20
+  links:
+    code: https://github.com/Rafnuss/GeoPressureR
+    docs:
+      - label: GeoPressureR Docs
+        url: https://raphaelnussbaumer.com/GeoPressureR/
+      - label: GEE App
+        url: https://rafnuss.users.earthengine.app/view/pressuregeolocator
+    pubs:
+      - label: Methods Ecol Evol 2023a
+        url: https://doi.org/10.1111/2041-210x.14043
+      - label: Methods Ecol Evol 2023b
+        url: https://doi.org/10.1111/2041-210x.14082

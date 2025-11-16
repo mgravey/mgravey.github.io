@@ -15,7 +15,10 @@ module Publications
       author_last = site.config['author_last'] || (author_name.split.last || '')
 
       pubs = []
-      dois.each do |doi|
+      dois.each do |entry|
+        doi = entry.is_a?(Hash) ? (entry['doi'] || entry['id'] || entry['ref']) : entry
+        flags = entry.is_a?(Hash) ? (entry['flags'] || []) : []
+        rank  = entry.is_a?(Hash) ? (entry['rank'] || 9999) : 9999
         rec = fetch_crossref(doi)
         next unless rec
 
@@ -32,11 +35,13 @@ module Publications
           'year' => year,
           'venue' => venue,
           'authors' => authors,
-          'authors_html' => authors_html
+          'authors_html' => authors_html,
+          'flags' => flags,
+          'rank' => rank
         }
       end
 
-      pubs.sort_by! { |p| [-(p['year'] || 0), (p['title'] || '').downcase] }
+      pubs.sort_by! { |p| [-(p['year'] || 0), (p['rank'] || 9999), (p['title'] || '').downcase] }
       site.data['publications'] = pubs
     end
 
@@ -93,4 +98,3 @@ module Publications
     end
   end
 end
-

@@ -1,0 +1,152 @@
+- title: "G2S: The GeoStatistical Server"
+  rank: 5
+  tags: [mps, maintained, matlab, python]
+  description: >-
+    The GeoStatistical Server (G2S) is a framework that allows you to run state-of-the-art Multiple Point Statistics (MPS) algorithms across languages.
+  links:
+    code: https://github.com/GAIA-UNIL/G2S
+    docs:
+      - label: Guide
+        url: https://gaia-unil.github.io/G2S/
+
+- title: "NDS: Narrow Distribution Selection"
+  rank: 15
+  tags: [mps, python]
+  description: >-
+    NDS is a tool to guide simulation choices by narrowing distributions in multi-point statistics workflows.
+  links:
+    code: https://github.com/example/nds
+    docs:
+      - label: Docs
+        url: https://example.org/nds
+
+# From provided Code & Software list
+- title: "Open Earth Engine Library"
+  rank: 0
+  tags: [rs, gee, maintained]
+  image: https://www.open-geocomputing.org/OpenEarthEngineLibrary/logo_white.svg
+  description: >-
+    The Open Earth Engine Library (OEEL) is part of the open-geocomputing initiative. The goal is to provide GEE users with free and open algorithms.
+  links:
+    code: https://github.com/open-geocomputing/OpenEarthEngineLibrary
+    docs:
+      - label: Examples
+        url: https://github.com/open-geocomputing/OpenEEL_Examples
+      - label: Documentation
+        url: https://www.open-geocomputing.org/OpenEarthEngineLibrary/
+
+- title: "Open Earth Engine extension"
+  rank: 0
+  tags: [rs, gee, maintained]
+  image: https://www.open-geocomputing.org/OpenEarthEngineLibrary/logo_white.svg
+  description: >-
+    A Chrome extension to enhance the Google Earth Engine user experience.
+  links:
+    code: https://github.com/open-geocomputing/OEEex
+    docs:
+      - label: Documentation
+        url: https://www.open-geocomputing.org/OEEex/
+      - label: Chrome Web Store
+        url: https://chrome.google.com/webstore/detail/open-earth-engine-extensi/dhkobehdekjgdahfldleahkekjffibhg
+
+- title: "Integration effect on gender ratio"
+  rank: 10
+  tags: [web, other]
+  description: >-
+    Interactive study to evaluate how long it takes to correct gender bias as a function of career duration.
+  links:
+    code: https://github.com/mgravey/Integrate-gender-ratio
+    docs:
+      - label: Online
+        url: /Integrate-gender-ratio/
+
+- title: "Useful micro toolset for statistical metric"
+  rank: 9
+  tags: [mps, matlab]
+  description: >-
+    A few Matlab functions to compute nD variograms and 2D cumulants.
+  links:
+    code: https://github.com/mgravey/spatialstats-utilitary-matlab
+
+- title: "MexInterrupt"
+  rank: 5
+  tags: [other, matlab]
+  description: >-
+    Example of interrupting C/C++ code in a Matlab MEX file.
+  links:
+    code: https://github.com/mgravey/MexInterrupt
+
+- title: "Random Kmin/Kmax"
+  rank: 5
+  tags: [other, matlab]
+  description: >-
+    Header-only library to find k smallest/largest values and indices in an unsorted array; optimized with intrinsics, MATLAB wrapper provided.
+  links:
+    code: https://github.com/mgravey/randomKmin-max
+
+- title: "2D Dynamic Warping"
+  rank: 6
+  tags: [other]
+  description: >-
+    C/C++ implementation of 2D Dynamic Time Warping. See the original publication for details.
+  links:
+    code: https://github.com/mgravey/2DDW
+    docs:
+      - label: Publication
+        url: https://doi.org/10.1109/CVPR.2004.324
+
+- title: "pyDev4G2S"
+  rank: 5
+  tags: [other, python]
+  description: >-
+    Module to develop new MPS algorithms in Python, leveraging G2S for remote connections and interfacing with other languages.
+  links:
+    code: https://github.com/GAIA-UNIL/pyDev4G2S
+
+- title: "G2S for QGIS"
+  rank: 6
+  tags: [rs, mps]
+  description: >-
+    QGIS interface for G2S to run remote-sensing stochastic simulations directly in QGIS.
+  links:
+    code: https://github.com/GAIA-UNIL/G2S-4-QGIS
+
+- title: "PyQS-PyDS"
+  rank: 7
+  tags: [mps, python]
+  description: >-
+    Minimal Python code to grasp how Direct Sampling and QuickSampling work. Focused on core concepts over performance.
+  links:
+    code: https://github.com/GAIA-UNIL/PyQS-PyDS
+
+- title: "Matching Map Maker"
+  rank: 7
+  tags: [rs, matlab]
+  description: >-
+    Pattern matching between very large images (50k x 50k), useful to follow slow, deformable objects over time (e.g., glaciers).
+  links:
+    code: https://github.com/GAIA-UNIL/MatchingMapMaker
+
+- title: "Fast Gaussian Simulation"
+  rank: 6
+  tags: [other, matlab]
+  description: >-
+    Matlab function to generate multiple n-D Gaussian fields quickly using FFT; reduces edge effects on long range.
+  links:
+    code: https://github.com/GAIA-UNIL/FastGaussianSimulation
+
+- title: "TIFF Training Images"
+  rank: 3
+  tags: [mps, matlab, python]
+  description: >-
+    A set of training images useful for MPS, saved as TIFF to load directly from GitHub in a few lines — ideal for demos.
+  links:
+    code: https://github.com/GAIA-UNIL/TrainingImagesTIFF
+
+- title: "GeoPressureAPI"
+  rank: 3
+  tags: [rs, python, gee]
+  description: >-
+    Server returning probability of bird position from pressure records using Google Earth Engine access to ERA‑5.
+  links:
+    code: https://github.com/Rafnuss/GeoPressureAPI
