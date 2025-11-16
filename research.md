@@ -3,6 +3,7 @@ title: Research
 layout: page
 permalink: /research/
 bg_image: /assets/img/background/ThinkingDifferently2.png
+page_class: readable justified
 ---
 
 <div class="quote-box popupTrigger" data-popup-id="HGWells_quote">

@@ -3,6 +3,7 @@ title: About Me
 layout: page
 permalink: /
 bg_image: /assets/img/background/starSky.jpg
+page_class: readable justified
 ---
 
 ![Mathieu Gravey](/assets/img/MathieuGravey_current.png){: .about-photo .popupTrigger data-popup-id="old_picture"}

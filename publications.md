@@ -3,6 +3,7 @@ title: Publications
 layout: page
 permalink: /publications/
 bg_image: /assets/img/background/berezina.jpg
+page_class: readable justified
 ---
 
 {% include render_filters.html scope='publications' %}

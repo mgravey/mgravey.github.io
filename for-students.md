@@ -3,7 +3,7 @@ title: 4Students
 layout: page
 permalink: /4students/
 bg_image: /assets/img/background/4student.jpg
-page_class: greek-nums
+page_class: greek-nums readable justified
 ---
 
 ## Projects for Students

@@ -3,7 +3,7 @@ title: Advices
 layout: page
 permalink: /advices/
 bg_image: /assets/img/background/4student.jpg
-page_class: greek-nums
+page_class: greek-nums readable justified
 ---
 
 ## General Advice

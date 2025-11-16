@@ -215,3 +215,8 @@ main{ position:relative; flex:1 0 auto; padding-bottom: 60px; min-height: calc(1
 /* Page-specific: Greek numbering for ordered lists */
 .page-content.greek-nums ol{ list-style-type: lower-greek; }
 .page-content.greek-nums ol li{ margin: 6px 0; }
+
+/* Page-specific: readability and justification */
+.page-content.readable{ font-size: 1.125rem; }
+.page-content.justified p{ text-align: justify; text-justify: inter-word; hyphens: auto; }
+.page-content.justified li{ text-align: justify; text-justify: inter-word; hyphens: auto; }
