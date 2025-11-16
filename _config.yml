@@ -23,6 +23,8 @@ default_bg: "/assets/img/background/starSky.jpg"
 # Jekyll settings
 markdown: kramdown
 highlighter: rouge
+kramdown:
+  input: GFM
 sass:
   style: compressed
 

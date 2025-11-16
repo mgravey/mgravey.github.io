@@ -8,24 +8,18 @@ tags:
   - key: mps
     label: Multiple-point statistics
     groups: [topic, flags]
-  - key: web
-    label: Web
-    groups: [topic]
-  - key: other
-    label: Other
-    groups: [topic]
   - key: rs
     label: Remote-sensing
     groups: [topic, flags]
   - key: geospatial
     label: Geospatial
     groups: [topic]
-  - key: web
-    label: Web
-    groups: [topic]
-  - key: other
-    label: Other
-    groups: [topic]
+  # - key: web
+  #   label: Web
+  #   groups: [topic]
+  # - key: other
+  #   label: Other
+  #   groups: [topic]
 
   # Publication flags
   - key: geostatistics

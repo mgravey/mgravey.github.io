@@ -16,26 +16,7 @@
     pubs:
       - label: GMD 2020
         url: https://doi.org/10.5194/gmd-13-2611-2020
-
-- title: "AutoQS: Automated QuickSampling pipelines"
-  rank: 20
-  year_start: 2019
-  year_finish: 2021
-  tags: [maintained, mps, python]
-  image: /assets/img/numberSymbole/test.png
-  progress:
-    code: 75
-    docs: 40
-    pub: 50
-  links:
-    code: https://github.com/example/autoqs
-    docs:
-      - label: Docs
-        url: https://example.org/autoqs
-    pubs:
-      - label: Preprint
-        url: https://doi.org/10.0000/example
-
+        
 # Imported from provided list
 - title: "Satellite image colorization"
   rank: 15

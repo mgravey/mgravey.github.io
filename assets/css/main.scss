@@ -192,6 +192,43 @@ main{ position:relative; flex:1 0 auto; padding-bottom: 60px; min-height: calc(1
 .quote-box .quote-author{ margin-top:8px; opacity:0.75; font-weight:600; }
 .quote-box .quote-note{ margin-top:6px; font-size: 13px; opacity:0.7; }
 
+/* Experiences & Skills tables */
+.exp-table{ width:100%; border-collapse: collapse; table-layout: fixed; --cnum-scale: 1.5; }
+.exp-table th, .exp-table td{ padding: 10px 12px; vertical-align: top; border-top: 1px solid rgba(255,255,255,0.08); }
+.exp-table thead th{ border-top: 0; opacity: .85; text-align: left; }
+.exp-table .date{ white-space: nowrap; width: 130px; color: var(--muted); }
+.exp-table .role{ width: 36%; }
+.exp-table .details{ }
+.exp-table tr:nth-child(odd){ background: rgba(255,255,255,0.04); }
+.exp-table tr:hover{ background: rgba(255,255,255,0.06); }
+.exp-table td:first-child, .exp-table th:first-child{ vertical-align: middle; }
+.exp-table .cnum{
+  display:block;
+  width: 100%;
+  aspect-ratio: 38 / 68;
+  height: auto;
+  background-repeat:no-repeat;
+  background-size: contain;
+  background-position: left center;
+  margin: 0;
+  filter: brightness(1.2);
+}
+.exp-table .date-wrap{ display:flex; align-items:flex-start; gap:10px; }
+/* Ensure column widths and consistent layout for Markdown tables */
+.exp-table td:nth-child(1), .exp-table th:nth-child(1){ width: var(--col1, 10%); }
+.exp-table td:nth-child(2), .exp-table th:nth-child(2){ width: var(--col2, 15%); white-space: normal; color: var(--muted); }
+.exp-table td:nth-child(3), .exp-table th:nth-child(3){ width: var(--col3, 35%); }
+.exp-table td, .exp-table th{ text-align: left; }
+/* Allow wrapping inside cells for long content */
+.exp-table td{ overflow-wrap: anywhere; hyphens: auto; }
+
+/* Skills grid (two-column on wide screens) */
+.skills-grid{ display:grid; grid-template-columns: 1fr; gap: 18px; }
+@media (min-width: 900px){ .skills-grid{ grid-template-columns: 1fr 1fr; align-items:start; } }
+.skills-grid > div{ min-width:0; }
+/* Logos inside table cells */
+.exp-table td img.logo{ height:18px; width:auto; vertical-align: text-bottom; margin-right:6px; }
+
 /* Links (content only) */
 .page-header a,
 .page-content a{ color:#8ecaff; text-decoration:none; }

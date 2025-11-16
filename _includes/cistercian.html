@@ -1,0 +1,57 @@
+{%- comment -%}
+  Renders a small Cistercian-like year mark by stacking existing glyph images.
+  Usage: {% include cistercian.html year=2023 %}
+{%- endcomment -%}
+{%- assign y = include.year | plus: 0 -%}
+{%- assign thousands = y | divided_by: 1000 | floor -%}
+{%- assign tens = y | modulo: 100 | divided_by: 10 | floor -%}
+{%- assign units = y | modulo: 10 -%}
+
+{%- assign parts = '' | split: ',' -%}
+
+{%- if thousands > 0 -%}
+  {%- assign i = 0 -%}
+  {%- for i in (1..thousands) -%}
+    {%- assign parts = parts | push: '/assets/img/numberSymbole/1000.png' -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{%- if tens >= 2 -%}
+  {%- assign twos = tens | divided_by: 2 -%}
+  {%- for i in (1..twos) -%}
+    {%- assign parts = parts | push: '/assets/img/numberSymbole/20.png' -%}
+  {%- endfor -%}
+  {%- assign tens = tens | modulo: 2 -%}
+{%- endif -%}
+{%- if tens == 1 -%}
+  {%- assign parts = parts | push: '/assets/img/numberSymbole/10.png' -%}
+{%- endif -%}
+
+{%- assign n = units -%}
+{%- if n >= 6 -%}
+  {%- assign parts = parts | push: '/assets/img/numberSymbole/6.png' -%}
+  {%- assign n = n | minus: 6 -%}
+{%- endif -%}
+{%- if n >= 4 -%}
+  {%- assign parts = parts | push: '/assets/img/numberSymbole/4.png' -%}
+  {%- assign n = n | minus: 4 -%}
+{%- endif -%}
+{%- if n >= 2 -%}
+  {%- assign parts = parts | push: '/assets/img/numberSymbole/2.png' -%}
+  {%- assign n = n | minus: 2 -%}
+{%- endif -%}
+{%- if n >= 1 -%}
+  {%- assign parts = parts | push: '/assets/img/numberSymbole/1.png' -%}
+{%- endif -%}
+
+{%- assign urls = '' -%}
+{%- for p in parts -%}
+  {%- assign u = p | relative_url -%}
+  {%- if forloop.first -%}
+    {%- assign urls = 'url(' | append: u | append: ')' -%}
+  {%- else -%}
+    {%- assign urls = urls | append: ',url(' | append: u | append: ')' -%}
+  {%- endif -%}
+{%- endfor -%}
+
+<span class="cnum" aria-hidden="true" style="background-image: {{ urls }}"></span>{%- comment -%}noeol{%- endcomment -%}
