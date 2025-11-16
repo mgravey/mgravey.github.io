@@ -35,7 +35,8 @@ body{
 
 .site-header{
   position:fixed; top:0; left:0; right:0; z-index:120;
-  backdrop-filter:saturate(120%) blur(6px);
+  -webkit-backdrop-filter: saturate(120%) blur(6px);
+  backdrop-filter: saturate(120%) blur(6px);
   background:linear-gradient(to bottom, rgba(8,10,14,0.85), rgba(8,10,14,0.35));
   border-bottom:1px solid rgba(255,255,255,0.06);
 }
@@ -78,6 +79,8 @@ main{ position:relative; flex:1 0 auto; padding-bottom: 60px; min-height: calc(1
   margin: var(--container-gap) auto;
   padding: var(--container-pad-y) var(--container-pad-x);
   background: var(--container-bg); backdrop-filter: blur(var(--container-blur));
+  -webkit-backdrop-filter: blur(var(--container-blur));
+  transition: -webkit-backdrop-filter .22s ease, backdrop-filter .22s ease;
   border: 1px solid rgba(255,255,255,0.06); border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
@@ -90,7 +93,8 @@ main{ position:relative; flex:1 0 auto; padding-bottom: 60px; min-height: calc(1
 .site-footer{
   position:fixed; left:0; right:0; bottom:0; z-index:100;
   border-top:1px solid rgba(255,255,255,0.06); padding:0; background:rgba(8,10,14,0.6);
-  backdrop-filter:saturate(120%) blur(6px);
+  -webkit-backdrop-filter: saturate(120%) blur(6px);
+  backdrop-filter: saturate(120%) blur(6px);
 }
 .site-footer .container{ padding:0 var(--container-pad-x); margin:10px auto; }
 .footer-inner{ display:flex; justify-content:space-between; align-items:center; gap:12px; min-height:44px; }

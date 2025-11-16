@@ -69,6 +69,12 @@
   }
 
   function runInit(){ if(window.initPage) { try{ window.initPage(); }catch(e){} } }
+  function setCardBlur(containerEl, value){
+    try{
+      var card = containerEl && containerEl.querySelector && containerEl.querySelector('.container');
+      if(card){ card.style.setProperty('--container-blur', value); }
+    }catch(e){}
+  }
   function setBgFrom(container){
     try{
       var url = container && container.getAttribute && container.getAttribute('data-bg');
@@ -106,21 +112,23 @@
           sync: true,
           async leave({ current }){
             current.container.classList.add('is-current');
-            try{ current.container.style.willChange = 'opacity, transform'; }catch(e){}
+            setCardBlur(current.container, '0px');
+            //try{ current.container.style.willChange = 'opacity, transform'; }catch(e){}
             if(effect === 'fade') return fadeOut(current.container, DURATION);
             return slideOut(current.container, DURATION, 'left');
           },
           async enter({ next }){
             next.container.classList.add('is-next');
             setBgFrom(next.container);
-            try{ next.container.style.willChange = 'opacity, transform'; }catch(e){}
+            setCardBlur(next.container, '0px');
+            //try{ next.container.style.willChange = 'opacity, transform'; }catch(e){}
             if(effect === 'fade') return fadeIn(next.container, DURATION);
             return slideIn(next.container, DURATION, 'left');
           },
           after({ current, next }){
             // Cleanup temporary classes and styles
-            if(current && current.container){ current.container.classList.remove('is-current'); current.container.style.willChange = ''; }
-            if(next && next.container){ next.container.classList.remove('is-next'); next.container.style.willChange = ''; }
+            if(current && current.container){ current.container.classList.remove('is-current'); setCardBlur(current.container, ''); current.container.style.willChange = ''; }
+            if(next && next.container){ next.container.classList.remove('is-next'); setCardBlur(next.container, ''); next.container.style.willChange = ''; }
           }
         }]
       });
