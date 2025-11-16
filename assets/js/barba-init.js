@@ -78,23 +78,20 @@
   function setBgFrom(container){
     try{
       var url = container && container.getAttribute && container.getAttribute('data-bg');
-      var layer = document.querySelector('.bg-layer');
-      if(!url || !layer) return;
-      var current = getComputedStyle(layer).getPropertyValue('--bg-image').trim();
+      var a = document.querySelector('.bg-layer.bg-a');
+      var b = document.querySelector('.bg-layer.bg-b');
+      if(!url || !a || !b) return;
+      var active = a.classList.contains('is-active') ? a : b;
+      var inactive = active === a ? b : a;
       var newVal = 'url("' + url + '")';
-      if(current === newVal) return; // no change
+      var current = getComputedStyle(active).getPropertyValue('--bg-image').trim();
+      if(current === newVal) return; // already showing
 
-      // Crossfade overlay
-      var overlay = document.createElement('div');
-      overlay.className = 'bg-layer bg-layer--overlay';
-      overlay.style.setProperty('--bg-image', newVal);
-      overlay.style.opacity = '0';
-      document.body.appendChild(overlay);
-      requestAnimationFrame(function(){ overlay.style.opacity = '1'; });
-      overlay.addEventListener('transitionend', function handler(){
-        overlay.removeEventListener('transitionend', handler);
-        layer.style.setProperty('--bg-image', newVal);
-        try{ overlay.remove(); }catch(e){}
+      inactive.style.setProperty('--bg-image', newVal);
+      // Crossfade by toggling the active class without DOM add/remove
+      requestAnimationFrame(function(){
+        inactive.classList.add('is-active');
+        active.classList.remove('is-active');
       });
     }catch(e){}
   }

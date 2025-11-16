@@ -13,7 +13,8 @@
   </head>
   <body data-barba="wrapper">
     {% include header.html %}
-    <div class="bg-layer" aria-hidden="true" style="--bg-image: url('{{ page.bg_image | default: site.default_bg }}')"></div>
+    <div class="bg-layer bg-a is-active" aria-hidden="true" style="--bg-image: url('{{ page.bg_image | default: site.default_bg }}')"></div>
+    <div class="bg-layer bg-b" aria-hidden="true" style="--bg-image: url('{{ page.bg_image | default: site.default_bg }}')"></div>
     <main id="main" data-barba="container" data-barba-namespace="{{ page.slug | default: page.permalink | default: page.title | default: 'page' }}" data-bg="{{ page.bg_image | default: site.default_bg }}">
       <div class="container">
         {{ content }}
