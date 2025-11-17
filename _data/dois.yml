@@ -2,16 +2,18 @@
   flags:
     - mps
     - geostatistics
+    - method
 
 - doi: 10.1007/s11004-019-09831-7
   flags:
     - mps
     - geostatistics
+    - method
 
 - doi: 10.1007/s41781-020-00048-6
   flags:
     - simulation
-    - high-impact
+    - hep
 
 - doi: 10.1016/j.cageo.2017.12.006
   flags:
@@ -21,14 +23,13 @@
 - doi: 10.1016/j.cpc.2024.109134
   flags:
     - geostatistics
-    - ml
     - method
     - code
 
 - doi: 10.1016/j.isprsjprs.2018.11.003
   flags:
     - rs
-    - ml
+    - mps
     - method
     - first-author
 
@@ -41,6 +42,7 @@
   flags:
     - ecology
     - climate
+    - rs
 
 - doi: 10.1029/2023gh000811
   flags:
@@ -52,26 +54,26 @@
 - doi: 10.1109/mcse.2023.3317773
   flags:
     - geostatistics
-    - ml
-    - method
     - code
+    - last-author
 
 - doi: 10.1109/tgrs.2024.3353482
   flags:
     - mps
-    - rs
     - method
 
 - doi: 10.1111/2041-210x.14043
   flags:
+    - geostatistics
     - ecology
     - method
     - rs
 
 - doi: 10.1111/2041-210x.14082
   flags:
+    - geostatistics
     - ecology
-    - method
+    
     - rs
 
 - doi: 10.1111/gcb.16206
@@ -95,17 +97,17 @@
 
 - doi: 10.1659/mrd.2024.00029
   flags:
-    - climate
-    - ecology
+    - 3Ds
+    - method
 
 - doi: 10.2989/00306525.2021.1995908
   flags:
     - ecology
     - climate
+    - rs
 
 - doi: 10.3390/rs16122084
   flags:
-    - rs
     - method
     - mps
 
@@ -134,5 +136,5 @@
     - mps
     - geostatistics
     - method
-    - last-author
+    - first-author
 
