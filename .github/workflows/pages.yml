@@ -41,7 +41,7 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Generate Publications
-        run: ruby script/generate_publications.rb
+        run: ruby scripts/generate_publications.rb
 
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
