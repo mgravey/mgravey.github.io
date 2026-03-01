@@ -138,3 +138,14 @@
     - method
     - first-author
 
+- doi: 10.1016/j.jag.2026.105088
+  flags:
+    - ecology
+    - climate
+    - rs
+
+- doi: 10.1134/S1064229325603130
+  flags:
+    - mps
+    - geostatistics
+
