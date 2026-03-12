@@ -17,6 +17,21 @@ page_class: greek-nums readable justified
 
 **Don't Fear Changing Fields:** Success in a specialized field often requires both exceptional skill and luck due to high competition. Switching fields can not only broaden your knowledge and challenges, but also provide you with a unique perspective that sets you apart.
 
+## How to Email Efficiently
+1. Clear, precise, and concise.
+Try to make your email easy to understand: what you need, from whom, and by when. In practice, short and clear usually works best. If useful, do not hesitate to use an LLM to improve clarity before sending.
+
+2. Ask your real problem, not only your current step.
+Avoid the [XY Problem](https://xyproblem.info/): do not ask only for your attempted solution (`Y`) if your real goal is different (`X`).
+When you ask for help, include:
+- the final goal,
+- the current blocker,
+- what you already tried,
+- key constraints,
+- and a short history of how you got here.
+
+This gives a better overall understanding and helps to check whether a more optimal solution exists.
+
 ## BSc/MSc
 Make your own subject! If you need to work on a project, try to adjust it to fit your interests. Usually, you can convince professors to deviate from the original topic. Why? For you, it's more interesting to work on something you're passionate about. On the other hand, if a professor provides a subject, it's probably their expertise field (they'll notice any shortcuts you take). Conversely, if you choose a subject, you become the expert, and the professor might even learn something new.
 
