@@ -1,0 +1,35 @@
+endpoint: "https://geohub.mgravey.com/survey"
+storage_key: "mg_email_gate_v1"
+title: "One Tiny Checkpoint"
+description: "Please answer a few quick questions before email addresses are unlocked."
+complete_message: "Thanks. Email links are now unlocked on this browser."
+
+questions:
+  - id: 1
+    type: choice
+    prompt: "What is worse: a research that ignores how means (average) work, or believing the Earth is flat?"
+    answers:
+      - id: 1
+        label: "mean"
+      - id: 2
+        label: "flat earth"
+
+# Add more questions later by appending new items under `questions`.
+# Supported types:
+# - choice:
+#   - id: 2
+#     type: choice
+#     prompt: "Your question here"
+#     answers:
+#       - id: 1
+#         label: "Option A"
+#       - id: 2
+#         label: "Option B"
+# - text:
+#   - id: 3
+#     type: text
+#     prompt: "Optional context"
+#     placeholder: "Write here"
+#     required: false
+#     answer_id_filled: 1
+#     answer_id_empty: 2

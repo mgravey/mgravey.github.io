@@ -25,6 +25,8 @@
     </main>
     {% include footer.html %}
 
+    <script id="survey-config" type="application/json">{{ site.data.survey | jsonify }}</script>
+
     <!-- Barba.js via CDN -->
     <script src="https://unpkg.com/@barba/core"></script>
     <script src="{{ '/assets/js/layout.js' | relative_url }}"></script>

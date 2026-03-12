@@ -19,6 +19,12 @@
 - title: Advices
   url: /advices/
   show: true
+- title: Contact
+  url: /contact/
+  show: true
+- title: For Editors
+  url: /for-editors/
+  show: true
 - title: 4Students
   url: /4students/
   show: true
