@@ -48,3 +48,4 @@ exclude:
   - Gemfile*
   - package*.json
   - .github
+  - viewpoints

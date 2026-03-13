@@ -26,6 +26,8 @@ I am a Researcher (formerly Junior Group Leader) at the [Institute for Interdisc
 ## Current Work
 I’m developing a passive sensing approach using photogrammetry to generate digital elevation models (DEM) from a single flyover. I also collaborate on projects spanning remote sensing, geostatistics, and bird tracking.
 
+I also publish short opinion notes in <a href="{{ '/viewpoints/' | relative_url }}" data-barba-prevent="all">Viewpoints</a>.
+
 If you’re a student, see [Advices](/advices/) and [4Students](/4students/).
 
 <!-- Old photo popup -->

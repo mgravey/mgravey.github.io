@@ -9,11 +9,15 @@
         {% assign items = site.data.nav %}
         {% for item in items %}
           {% if item.show != false %}
-          <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          <li>
+            <a
+              href="{{ item.url | relative_url }}"
+              {% if item.barba_prevent %}data-barba-prevent="all"{% endif %}
+            >{{ item.title }}</a>
+          </li>
           {% endif %}
         {% endfor %}
       </ul>
     </nav>
   </div>
 </header>
-

@@ -44,17 +44,18 @@ body{
   background:linear-gradient(to bottom, rgba(8,10,14,0.85), rgba(8,10,14,0.35));
   border-bottom:1px solid rgba(255,255,255,0.06);
 }
-.nav-inner{ display:flex; align-items:center; justify-content:space-between; gap:16px; max-width:var(--container-max); margin:0 auto; padding:12px 16px; }
+.nav-inner{ display:flex; align-items:center; justify-content:center; gap:10px; max-width:var(--container-max); margin:0 auto; padding:12px 16px; }
 .brand{ color:var(--text); text-decoration:none; font-weight:700; letter-spacing:0.2px; }
-.nav ul{ list-style:none; display:flex; gap:18px; margin:0; padding:0; align-items:center; }
+.nav ul{ list-style:none; display:flex; gap:10px; margin:0; padding:0; align-items:center; }
 .nav li{ display:flex; }
-.nav a{ display:flex; align-items:center; justify-content:center; text-align:center; color:var(--text); text-decoration:none; opacity:0.9; padding:8px 10px; border-radius:8px; line-height:1.2; }
+.nav a{ display:flex; align-items:center; justify-content:center; text-align:center; color:var(--text); text-decoration:none; opacity:0.9; padding:7px 8px; border-radius:8px; line-height:1.2; }
 .nav a:hover, .nav a:focus{ background:rgba(255,255,255,0.06); outline:none; }
 
 .burger{ display:none; background:none; border:0; color:var(--text); padding:8px; cursor:pointer; }
 .burger span{ display:block; width:24px; height:2px; background:var(--text); margin:5px 0; transition:all .2s ease; }
 
 @media (max-width: 1023px){
+  .nav-inner{ justify-content:space-between; }
   .burger{ display:block; }
   .nav{ position:fixed; inset:var(--header-h, 56px) 0 auto 0; background:rgba(8,10,14,0.95); transform:translateY(-10px); opacity:0; pointer-events:none; transition:opacity .2s ease, transform .2s ease; }
   .nav.open{ opacity:1; transform:translateY(0); pointer-events:auto; }
