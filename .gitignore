@@ -3,6 +3,7 @@
 /node_modules
 /vendor
 /.bundle
+/.ruby-lsp
 /assets/dist
 /assets/generated
 /.jekyll-cache

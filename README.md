@@ -23,9 +23,8 @@ ordered list becomes a flat drawer on narrower screens.
 
 ## Local development
 
-Use Ruby 3.2, Bundler 2.5.23, and Node.js 22.
-The `console` dependency is capped below 1.35 because newer releases require
-Ruby 3.3, while this site intentionally retains Ruby 3.2 compatibility.
+Use Ruby 4.0, Bundler 4, and Node.js 22. These major versions match the GitHub
+Actions build so local dependency resolution produces a CI-compatible lockfile.
 
 ```sh
 bundle install
