@@ -1,0 +1,12 @@
+<li class="publication" data-filter-item data-tags="{{ include.publication.flags | join: ',' }}">
+  <span class="publication-authors">
+    {% for author in include.publication.authors %}
+      {% capture author_name %}{{ author.family }}, {{ author.given }}{% endcapture %}
+      {% if author.family == site.data.person.family_name %}<strong>{{ author_name }}</strong>{% else %}{{ author_name }}{% endif %}{% unless forloop.last %}; {% endunless %}
+    {% endfor %}
+  </span>
+  ({{ include.publication.year }}).
+  <strong>{{ include.publication.title }}</strong>.
+  <em>{{ include.publication.venue }}</em>.
+  <a href="https://doi.org/{{ include.publication.doi }}" target="_blank" rel="noopener noreferrer">{{ include.publication.doi }}</a>
+</li>

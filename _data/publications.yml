@@ -1,0 +1,655 @@
+---
+- doi: 10.1016/j.jag.2026.105088
+  flags:
+  - ecology
+  - climate
+  - rs
+  rank: 9999
+  title: Global elevational shifts and drivers of alpine treelines
+  year: 2026
+  venue: International Journal of Applied Earth Observation and Geoinformation
+  authors:
+  - given: Tianchen
+    family: Liang
+  - given: Feng
+    family: Tian
+    orcid: 0000-0002-9686-2769
+  - given: Linqing
+    family: Zou
+  - given: Mathieu
+    family: Gravey
+    orcid: 0000-0002-0871-1507
+  - given: Sabine B.
+    family: Rumpf
+    orcid: 0000-0001-5909-9568
+- doi: 10.1134/s1064229325603130
+  flags:
+  - mps
+  - geostatistics
+  rank: 9999
+  title: Using MAZA Library to Process Soil and Other Porous Media XCT Images
+  year: 2026
+  venue: Eurasian Soil Science
+  authors:
+  - given: R. V.
+    family: Vasilyev
+  - given: M.
+    family: Gravey
+  - given: A. A.
+    family: Ananev
+  - given: A. M.
+    family: Cherkasov
+  - given: A.N.
+    family: Khlyupin
+  - given: M. V.
+    family: Karsanina
+  - given: K. N.
+    family: Abrosimov
+    orcid: 0000-0002-3552-8054
+  - given: K. D.
+    family: Tolstygin
+    orcid: '0009-0005-1395-3745'
+  - given: K. M.
+    family: Gerke
+- doi: 10.1016/j.jag.2025.104613
+  flags:
+  - landslide
+  - rs
+  rank: 9999
+  title: Retrieving 4D landslide displacement using Pléiades satellite stereo pairs on the La Valette landslide
+  year: 2025
+  venue: International Journal of Applied Earth Observation and Geoinformation
+  authors:
+  - given: Sheng
+    family: Fu
+    orcid: 0000-0001-8077-9680
+  - given: Steven M.
+    family: de Jong
+  - given: Wiebe
+    family: Nijland
+    orcid: 0000-0002-2665-0947
+  - given: Mathieu
+    family: Gravey
+  - given: Philip
+    family: Kraaijenbrink
+    orcid: 0000-0002-0126-8602
+  - given: Tjalling
+    family: de Haas
+- doi: 10.3390/rs17020291
+  flags:
+  - rs
+  - ml
+  - method
+  rank: 9999
+  title: Surveying Nearshore Bathymetry Using Multispectral and Hyperspectral Satellite Imagery and Machine Learning
+  year: 2025
+  venue: Remote Sensing
+  authors:
+  - given: David
+    family: Hartmann
+    orcid: '0009-0007-3349-5897'
+  - given: Mathieu
+    family: Gravey
+    orcid: 0000-0002-0871-1507
+  - given: Timothy David
+    family: Price
+    orcid: 0000-0003-3664-4417
+  - given: Wiebe
+    family: Nijland
+    orcid: 0000-0002-2665-0947
+  - given: Steven Michael
+    family: de Jong
+    orcid: 0000-0002-1586-9601
+- doi: 10.1016/j.cpc.2024.109134
+  flags:
+  - geostatistics
+  - method
+  - code
+  rank: 9999
+  title: 'Evaluation of classical correlation functions from 2/3D images on CPU and GPU architectures: Introducing CorrelationFunctions.jl'
+  year: 2024
+  venue: Computer Physics Communications
+  authors:
+  - given: Vasily
+    family: Postnicov
+  - given: Aleksei
+    family: Samarin
+  - given: Marina V.
+    family: Karsanina
+  - given: Mathieu
+    family: Gravey
+  - given: Aleksey
+    family: Khlyupin
+  - given: Kirill M.
+    family: Gerke
+    orcid: 0000-0002-8379-2132
+- doi: 10.3390/rs16122084
+  flags:
+  - method
+  - mps
+  rank: 9999
+  title: 'Reconstruction of High-Resolution 3D GPR Data from 2D Profiles: A Multiple-Point Statistical Approach'
+  year: 2024
+  venue: Remote Sensing
+  authors:
+  - given: Chongmin
+    family: Zhang
+  - given: Mathieu
+    family: Gravey
+    orcid: 0000-0002-0871-1507
+  - given: Grégoire
+    family: Mariéthoz
+    orcid: 0000-0002-8820-2808
+  - given: James
+    family: Irving
+    orcid: 0000-0001-9833-206X
+- doi: 10.1109/tgrs.2024.3353482
+  flags:
+  - mps
+  - method
+  rank: 9999
+  title: Reconstruction of Missing GPR Data Using Multiple-Point Statistical Simulation
+  year: 2024
+  venue: IEEE Transactions on Geoscience and Remote Sensing
+  authors:
+  - given: Chongmin
+    family: Zhang
+    orcid: '0009-0008-5156-4662'
+  - given: Mathieu
+    family: Gravey
+    orcid: 0000-0002-0871-1507
+  - given: Grégoire
+    family: Mariéthoz
+    orcid: 0000-0002-8820-2808
+  - given: James
+    family: Irving
+    orcid: 0000-0001-9833-206X
+- doi: 10.1659/mrd.2024.00029
+  flags:
+  - 3d
+  - method
+  rank: 9999
+  title: 'Tackling Inter- and Transdisciplinary Challenges: A New Research Approach for the Institute for Interdisciplinary Mountain Research'
+  year: 2024
+  venue: Mountain Research and Development
+  authors:
+  - given: Valerie
+    family: Braun
+  - given: Mathieu
+    family: Gravey
+  - given: Andreas
+    family: Haller
+  - given: Kati
+    family: Heinrich
+  - given: Margreth
+    family: Keiler
+  - given: Annemarie
+    family: Polderman
+  - given: Fernando Ruiz
+    family: Peyré
+- doi: 10.1109/mcse.2023.3317773
+  flags:
+  - geostatistics
+  - code
+  - last-author
+  rank: 9999
+  title: A Python Multiprocessing Approach for Fast Geostatistical Simulations of Subglacial Topography
+  year: 2023
+  venue: Computing in Science &amp; Engineering
+  authors:
+  - given: Nathan W.
+    family: Schoedl
+    orcid: 0000-0002-2044-6873
+  - given: Emma J.
+    family: MacKie
+    orcid: 0000-0002-6303-5249
+  - given: Michael J.
+    family: Field
+    orcid: '0009-0008-4044-1755'
+  - given: Eric A.
+    family: Stubbs
+    orcid: '0009-0001-4610-3713'
+  - given: Allan
+    family: Zhang
+    orcid: 0000-0002-7927-4869
+  - given: Matthew
+    family: Hibbs
+    orcid: 0000-0002-5020-5683
+  - given: Mathieu
+    family: Gravey
+    orcid: 0000-0002-0871-1507
+- doi: 10.5194/gmd-16-5265-2023
+  flags:
+  - mps
+  - geostatistics
+  - method
+  - first-author
+  rank: 9999
+  title: 'AutoQS v1: automatic parametrization of QuickSampling based on training images analysis'
+  year: 2023
+  venue: Geoscientific Model Development
+  authors:
+  - given: Mathieu
+    family: Gravey
+    orcid: 0000-0002-0871-1507
+  - given: Grégoire
+    family: Mariethoz
+- doi: 10.1111/2041-210x.14043
+  flags:
+  - geostatistics
+  - ecology
+  - method
+  - rs
+  rank: 9999
+  title: Global positioning with animal‐borne pressure sensors
+  year: 2023
+  venue: Methods in Ecology and Evolution
+  authors:
+  - given: Raphaël
+    family: Nussbaumer
+    orcid: 0000-0002-8185-1020
+  - given: Mathieu
+    family: Gravey
+    orcid: 0000-0002-0871-1507
+  - given: Martins
+    family: Briedis
+    orcid: 0000-0002-9434-9056
+  - given: Felix
+    family: Liechti
+    orcid: 0000-0001-9473-0837
+- doi: 10.1029/2023gh000811
+  flags:
+  - hydrology
+  - climate
+  - rs
+  - ml
+  rank: 9999
+  title: Predicting Continental Scale Malaria With Land Surface Water Predictors Based on Malaria Dispersal Mechanisms and High‐Resolution Earth Observation Data
+  year: 2023
+  venue: GeoHealth
+  authors:
+  - given: Maurice W. M. L.
+    family: Kalthof
+    orcid: 0000-0003-4020-8597
+  - given: Mathieu
+    family: Gravey
+    orcid: 0000-0002-0871-1507
+  - given: Flore
+    family: Wijnands
+  - given: Derek
+    family: Karssenberg
+- doi: 10.1111/2041-210x.14082
+  flags:
+  - geostatistics
+  - ecology
+  - rs
+  rank: 9999
+  title: Reconstructing bird trajectories from pressure and wind data using a highly optimized hidden Markov model
+  year: 2023
+  venue: Methods in Ecology and Evolution
+  authors:
+  - given: Raphaël
+    family: Nussbaumer
+    orcid: 0000-0002-8185-1020
+  - given: Mathieu
+    family: Gravey
+    orcid: 0000-0002-0871-1507
+  - given: Martins
+    family: Briedis
+    orcid: 0000-0002-9434-9056
+  - given: Felix
+    family: Liechti
+    orcid: 0000-0001-9473-0837
+  - given: Daniel
+    family: Sheldon
+    orcid: 0000-0002-4257-2432
+- doi: 10.1111/jbi.14689
+  flags:
+  - ecology
+  - climate
+  - rs
+  rank: 9999
+  title: Snow cover persistence as a useful predictor of alpine plant distributions
+  year: 2023
+  venue: Journal of Biogeography
+  authors:
+  - given: Thomas
+    family: Panchard
+    orcid: 0000-0001-8263-4493
+  - given: Olivier
+    family: Broennimann
+    orcid: 0000-0001-9913-3695
+  - given: Mathieu
+    family: Gravey
+    orcid: 0000-0002-0871-1507
+  - given: Grégoire
+    family: Mariethoz
+    orcid: 0000-0002-8820-2808
+  - given: Antoine
+    family: Guisan
+    orcid: 0000-0002-3998-4815
+- doi: 10.1016/j.landusepol.2023.106887
+  flags:
+  - ecology
+  - climate
+  - rs
+  rank: 9999
+  title: The nature of a ‘forest transition’ in Thừa Thiên Huế Province, Central Vietnam – A study of land cover changes over five decades
+  year: 2023
+  venue: Land Use Policy
+  authors:
+  - given: Roland
+    family: Cochard
+  - given: Mathieu
+    family: Gravey
+  - given: Luiz Gustavo
+    family: Rasera
+  - given: Grégoire
+    family: Mariethoz
+  - given: Christian A.
+    family: Kull
+- doi: 10.1126/science.abn6697
+  flags:
+  - climate
+  - rs
+  - high-impact
+  rank: 9999
+  title: 'From white to green: Snow cover loss and increased vegetation productivity in the European Alps'
+  year: 2022
+  venue: Science
+  authors:
+  - given: Sabine B.
+    family: Rumpf
+    orcid: 0000-0001-5909-9568
+  - given: Mathieu
+    family: Gravey
+    orcid: 0000-0002-0871-1507
+  - given: Olivier
+    family: Brönnimann
+    orcid: 0000-0001-9913-3695
+  - given: Miska
+    family: Luoto
+    orcid: 0000-0001-6203-5143
+  - given: Carmen
+    family: Cianfrani
+  - given: Gregoire
+    family: Mariethoz
+    orcid: 0000-0002-8820-2808
+  - given: Antoine
+    family: Guisan
+    orcid: 0000-0002-3998-4815
+- doi: 10.1111/gcb.16206
+  flags:
+  - ecology
+  - climate
+  - rs
+  - high-impact
+  rank: 9999
+  title: Madagascar's fire regimes challenge global assumptions about landscape degradation
+  year: 2022
+  venue: Global Change Biology
+  authors:
+  - given: Leanne N.
+    family: Phelps
+    orcid: 0000-0002-7385-3907
+  - given: Niels
+    family: Andela
+  - given: Mathieu
+    family: Gravey
+  - given: Dylan S.
+    family: Davis
+  - given: Christian A.
+    family: Kull
+  - given: Kristina
+    family: Douglass
+  - given: Caroline E. R.
+    family: Lehmann
+- doi: 10.1007/s41781-020-00048-6
+  flags:
+  - simulation
+  - hep
+  rank: 9999
+  title: GeantV
+  year: 2021
+  venue: Computing and Software for Big Science
+  authors:
+  - given: G.
+    family: Amadio
+  - given: A.
+    family: Ananya
+  - given: J.
+    family: Apostolakis
+  - given: M.
+    family: Bandieramonte
+  - given: S.
+    family: Banerjee
+  - given: A.
+    family: Bhattacharyya
+  - given: C.
+    family: Bianchini
+  - given: G.
+    family: Bitzes
+  - given: P.
+    family: Canal
+  - given: F.
+    family: Carminati
+  - given: O.
+    family: Chaparro-Amaro
+  - given: G.
+    family: Cosmo
+  - given: J. C.
+    family: De Fine Licht
+  - given: V.
+    family: Drogan
+  - given: L.
+    family: Duhem
+  - given: D.
+    family: Elvira
+  - given: J.
+    family: Fuentes
+  - given: A.
+    family: Gheata
+  - given: M.
+    family: Gheata
+  - given: M.
+    family: Gravey
+  - given: I.
+    family: Goulas
+  - given: F.
+    family: Hariri
+  - given: S. Y.
+    family: Jun
+  - given: D.
+    family: Konstantinov
+  - given: H.
+    family: Kumawat
+  - given: J. G.
+    family: Lima
+  - given: A.
+    family: Maldonado-Romo
+  - given: J.
+    family: Martínez-Castro
+  - given: P.
+    family: Mato
+  - given: T.
+    family: Nikitina
+  - given: S.
+    family: Novaes
+  - given: M.
+    family: Novak
+  - given: K.
+    family: Pedro
+  - given: W.
+    family: Pokorski
+  - given: A.
+    family: Ribon
+  - given: R.
+    family: Schmitz
+  - given: R.
+    family: Seghal
+  - given: O.
+    family: Shadura
+  - given: E.
+    family: Tcherniaev
+  - given: S.
+    family: Vallecorsa
+  - given: S.
+    family: Wenzel
+  - given: Y.
+    family: Zhang
+- doi: 10.2989/00306525.2021.1995908
+  flags:
+  - ecology
+  - climate
+  - rs
+  rank: 9999
+  title: Investigating the influence of the extreme Indian Ocean Dipole on the 2020 influx of Red-necked Phalaropes <i>Phalaropus lobatus</i> in Kenya
+  year: 2021
+  venue: Ostrich
+  authors:
+  - given: Raphaël
+    family: Nussbaumer
+    orcid: 0000-0002-8185-1020
+  - given: Mathieu
+    family: Gravey
+    orcid: 0000-0002-0871-1507
+  - given: Améline
+    family: Nussbaumer
+    orcid: 0000-0003-1308-4154
+  - given: Colin
+    family: Jackson
+    orcid: 0000-0003-2280-1397
+- doi: 10.1007/s11004-019-09831-7
+  flags:
+  - mps
+  - geostatistics
+  - method
+  rank: 9999
+  title: 'Correction to: Downscaling Images with Trends Using Multiple-Point Statistics Simulation: An Application to Digital Elevation Models'
+  year: 2020
+  venue: Mathematical Geosciences
+  authors:
+  - given: Luiz Gustavo
+    family: Rasera
+    orcid: 0000-0001-6169-5705
+  - given: Mathieu
+    family: Gravey
+    orcid: 0000-0002-0871-1507
+  - given: Stuart N.
+    family: Lane
+    orcid: 0000-0002-6077-6076
+  - given: Gregoire
+    family: Mariethoz
+    orcid: 0000-0002-8820-2808
+- doi: 10.1007/s11004-019-09818-4
+  flags:
+  - mps
+  - geostatistics
+  - method
+  rank: 9999
+  title: 'Downscaling Images with Trends Using Multiple-Point Statistics Simulation: An Application to Digital Elevation Models'
+  year: 2020
+  venue: Mathematical Geosciences
+  authors:
+  - given: Luiz Gustavo
+    family: Rasera
+    orcid: 0000-0001-6169-5705
+  - given: Mathieu
+    family: Gravey
+    orcid: 0000-0002-0871-1507
+  - given: Stuart N.
+    family: Lane
+    orcid: 0000-0002-6077-6076
+  - given: Gregoire
+    family: Mariethoz
+    orcid: 0000-0002-8820-2808
+- doi: 10.5194/gmd-13-2611-2020
+  flags:
+  - mps
+  - geostatistics
+  - method
+  - code
+  - first-author
+  rank: 9999
+  title: 'QuickSampling v1.0: a robust and simplified pixel-based multiple-point simulation approach'
+  year: 2020
+  venue: Geoscientific Model Development
+  authors:
+  - given: Mathieu
+    family: Gravey
+    orcid: 0000-0002-0871-1507
+  - given: Grégoire
+    family: Mariethoz
+- doi: 10.5194/essd-11-579-2019
+  flags:
+  - glacier
+  - dataset
+  - rs
+  rank: 9999
+  title: A high-resolution image time series of the Gorner Glacier – Swiss Alps – derived from repeated unmanned aerial vehicle surveys
+  year: 2019
+  venue: Earth System Science Data
+  authors:
+  - given: Lionel
+    family: Benoit
+  - given: Aurelie
+    family: Gourdon
+  - given: Raphaël
+    family: Vallat
+  - given: Inigo
+    family: Irarrazaval
+    orcid: 0000-0001-8594-9669
+  - given: Mathieu
+    family: Gravey
+    orcid: 0000-0002-0871-1507
+  - given: Benjamin
+    family: Lehmann
+    orcid: 0000-0003-0077-6792
+  - given: Günther
+    family: Prasicek
+    orcid: 0000-0002-9332-1625
+  - given: Dominik
+    family: Gräff
+    orcid: 0000-0003-1642-4783
+  - given: Frederic
+    family: Herman
+  - given: Gregoire
+    family: Mariethoz
+- doi: 10.1016/j.isprsjprs.2018.11.003
+  flags:
+  - rs
+  - mps
+  - method
+  - first-author
+  rank: 9999
+  title: Analogue-based colorization of remote sensing images using textural information
+  year: 2019
+  venue: ISPRS Journal of Photogrammetry and Remote Sensing
+  authors:
+  - given: Mathieu
+    family: Gravey
+    orcid: 0000-0002-0871-1507
+  - given: Luiz Gustavo
+    family: Rasera
+  - given: Gregoire
+    family: Mariethoz
+    orcid: 0000-0002-8820-2808
+- doi: 10.1016/j.cageo.2017.12.006
+  flags:
+  - geostatistics
+  - method
+  rank: 9999
+  title: Accelerating Sequential Gaussian Simulation with a constant path
+  year: 2018
+  venue: Computers &amp; Geosciences
+  authors:
+  - given: Raphaël
+    family: Nussbaumer
+  - given: Grégoire
+    family: Mariethoz
+  - given: Mathieu
+    family: Gravey
+  - given: Erwan
+    family: Gloaguen
+  - given: Klaus
+    family: Holliger

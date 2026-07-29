@@ -1,7 +1,12 @@
 groups:
   projects: [status, topic]
-  code: [language, topic, status]
+  software: [language, topic, status]
   publications: [flags]
+
+filters:
+  projects: [finished, ongoing, collaboration, side, mps, rs, geospatial]
+  software: [maintained, mps, rs, geospatial, python, matlab, gee, web, other]
+  publications: [mps, rs, geostatistics, first-author, last-author]
 
 tags:
   # Topics
@@ -14,12 +19,12 @@ tags:
   - key: geospatial
     label: Geospatial
     groups: [topic]
-  # - key: web
-  #   label: Web
-  #   groups: [topic]
-  # - key: other
-  #   label: Other
-  #   groups: [topic]
+  - key: web
+    label: Web
+    groups: [topic]
+  - key: other
+    label: Other
+    groups: [topic]
 
   # Publication flags
   - key: geostatistics
@@ -58,6 +63,12 @@ tags:
   - key: dataset
     label: Dataset
     groups: [flags]
+  - key: 3d
+    label: 3D
+    groups: [flags]
+  - key: hep
+    label: High-Energy Physics
+    groups: [flags]
   - key: first-author
     label: First Author
     groups: [flags]
@@ -75,7 +86,7 @@ tags:
   - key: ongoing
     label: Ongoing
     groups: [status]
-  - key: colabor
+  - key: collaboration
     label: Collaboration
     groups: [status]
   - key: side

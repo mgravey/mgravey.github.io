@@ -1,0 +1,57 @@
+{% assign kind = include.type %}
+{% assign items = site.data.portfolio | where_exp: "item", "item.types contains kind" %}
+{% if kind == 'project' %}
+  {% assign items = items | sort: 'years.start' | reverse %}
+{% else %}
+  {% assign items = items | sort: 'rank' %}
+{% endif %}
+
+<div class="card-list" data-filter-list="{{ include.scope }}">
+  {% for item in items %}
+    {% assign all_tags = item.tags | concat: item.status %}
+    <article class="portfolio-card" data-filter-item data-title="{{ item.title | escape }}" data-tags="{{ all_tags | join: ',' }}">
+      <div class="card-content">
+        <div class="card-body">
+          <div class="card-heading">
+            <h2>{{ item.title }}</h2>
+            {% if item.years.start %}
+              <span class="card-years">{{ item.years.start }}{% if item.years.finish and item.years.finish != item.years.start %}–{{ item.years.finish }}{% elsif item.years.finish == nil %}–present{% endif %}</span>
+            {% endif %}
+          </div>
+
+          {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+
+          {% if item.links.size > 0 %}
+            <div class="resource-links" aria-label="Resources for {{ item.title }}">
+              {% for link in item.links %}
+                {% assign external = false %}
+                {% if link.url contains '://' %}{% assign external = true %}{% endif %}
+                <a class="btn btn-{{ link.kind }}" href="{{ link.url | relative_url }}"{% if external %} target="_blank" rel="noopener noreferrer"{% endif %}>
+                  {{ link.label }}
+                </a>
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          <div class="badges" aria-label="Topics and status">
+            {% for key in all_tags %}
+              {% assign tag = site.data.taxonomy.tags | where: 'key', key | first %}
+              {% if tag %}
+                <span class="badge tag-{{ tag.key }}">
+                  {% if tag.logo %}<img src="{{ tag.logo | relative_url }}" alt="" width="14" height="14">{% endif %}
+                  {{ tag.label }}
+                </span>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+
+        {% if item.image %}
+          <div class="card-media">
+            <img src="{{ item.image | relative_url }}" alt="" loading="lazy" decoding="async">
+          </div>
+        {% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</div>

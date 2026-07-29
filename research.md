@@ -2,8 +2,10 @@
 title: Research
 layout: page
 permalink: /research/
-bg_image: /assets/img/background/ThinkingDifferently2.png
+description: Research themes spanning machine learning, geostatistics, remote sensing, and open scientific software.
+bg_image: /assets/generated/background/ThinkingDifferently2.webp
 page_class: readable justified
+nav_order: 20
 ---
 
 <div class="quote-box popupTrigger" data-popup-id="HGWells_quote">
@@ -17,7 +19,7 @@ My research using machine learning is mainly focused on geoscience and on how to
 ## Geostatistics
 My research in geostatistics mainly focuses on statistical simulations. More precisely, I develop new algorithms in Multiple‑Point Statistics (MPS) and machine learning to generate complex structures.
 
-## Remote sensing
+## Remote Sensing
 Remote sensing has had a huge impact on my career and remains important to me. Currently, most of my work in remote sensing is done through collaborations on different projects: vegetation evolution (Vietnam and Valais), growing season, frozen lakes, and even the evolution of ocean NPP (net primary productivity). Many of these studies are run on online platforms such as Google Earth Engine, which enable analyses on very large datasets.
 
 ## Research philosophy
@@ -26,7 +28,7 @@ I put particular importance on investigating cutting‑edge solutions, from both
 Furthermore, I put particular effort and time into making the results of various studies available to the community through functional, open, and easy‑to‑use software and libraries.
 
 <!-- Popup with the full quote (opens only on click) -->
-<div class="popup" data-popup-id="HGWells_quote">
+<div class="popup" data-popup-id="HGWells_quote" aria-label="Full H. G. Wells quote">
   <div class="popup-inner">
     <h4>The full quote:</h4>
     <p>
@@ -34,5 +36,5 @@ Furthermore, I put particular effort and time into making the results of various
     </p>
     <div style="text-align:right; opacity:.85;">— H. G. Wells</div>
   </div>
-  <button class="popup-close" aria-label="Close"></button>
+  <button class="popup-close" type="button" aria-label="Close"></button>
 </div>

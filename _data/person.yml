@@ -1,0 +1,48 @@
+given_name: Mathieu
+family_name: Gravey
+headline: Researcher in geoscience, remote sensing, and scientific computing
+location: Innsbruck, Austria
+current_experience_id: oeaw-igf
+featured_experience_ids:
+  - utrecht
+  - stanford
+featured_education_id: phd-unil
+portrait: /assets/generated/MathieuGravey_current.webp
+portrait_alt: Mathieu Gravey
+previous_portrait: /assets/generated/MathieuGravey_old.webp
+
+focus_areas:
+  - title: Computer Science
+    items:
+      - Machine Learning
+      - High-Performance Computing (HPC)
+  - title: Remote Sensing
+    items:
+      - GIS
+      - Google Earth Engine
+  - title: Geostatistics
+    items:
+      - Multiple-Point Statistics (MPS)
+
+current_work: >-
+  I am developing a passive-sensing approach that uses photogrammetry to
+  generate digital elevation models from a single flyover. I also collaborate
+  on projects spanning remote sensing, geostatistics, and bird tracking.
+
+social:
+  - label: X / Twitter
+    key: twitter
+    url: https://twitter.com/mathieuGravey
+  - label: ResearchGate
+    key: researchgate
+    url: https://www.researchgate.net/profile/Mathieu-Gravey
+  - label: ORCID
+    key: orcid
+    url: https://orcid.org/0000-0002-0871-1507
+  - label: GitHub
+    key: github
+    url: https://github.com/mgravey
+
+contact:
+  general_email_b64: cmVzZWFyY2hAbWdyYXZleS5jb20=
+  review_email_b64: cGVlcnJldmlld0BtZ3JhdmV5LmNvbQ==

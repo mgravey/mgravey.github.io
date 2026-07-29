@@ -1,5 +1,12 @@
 *.DS_Store
-assets/img/background/image
 /_site
 /node_modules
+/vendor
+/.bundle
+/assets/dist
+/assets/generated
+/.jekyll-cache
+/.sass-cache
+/playwright-report
+/test-results
 viewpoints

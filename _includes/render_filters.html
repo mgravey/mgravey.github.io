@@ -1,20 +1,11 @@
 {% assign scope = include.scope %}
-{% assign groups = site.data.taxonomy.groups[scope] %}
-{% assign allowed = '' %}
-{% if scope == 'publications' %}
-  {% assign allowed = 'mps|rs|geostatistics|first-author|last-author' | split: '|' %}
-{% endif %}
-<div id="filters-{{ scope }}" class="filters">
-  {% for tag in site.data.taxonomy.tags %}
-    {% assign show = '' %}
-    {% for g in tag.groups %}
-      {% if groups contains g %}
-        {% assign show = '1' %}
-      {% endif %}
-    {% endfor %}
-    {% if show == '1' and (allowed == '' or allowed contains tag.key) %}
-      <button type="button" class="tag-chip" data-tag="{{ tag.key }}" title="{{ tag.label }}">
-        {% if tag.logo %}<img src="{{ tag.logo | relative_url }}" alt="{{ tag.label }}">{% endif %}
+{% assign allowed = site.data.taxonomy.filters[scope] %}
+<div id="filters-{{ scope }}" class="filters" data-filter-scope="{{ scope }}" role="group" aria-label="Filter items">
+  {% for key in allowed %}
+    {% assign tag = site.data.taxonomy.tags | where: 'key', key | first %}
+    {% if tag %}
+      <button type="button" class="tag-chip" data-tag="{{ tag.key }}" aria-pressed="false">
+        {% if tag.logo %}<img src="{{ tag.logo | relative_url }}" alt="" width="16" height="16">{% endif %}
         <span>{{ tag.label }}</span>
       </button>
     {% endif %}

@@ -2,7 +2,8 @@
 title: For Editors
 layout: page
 permalink: /for-editors/
-bg_image: /assets/img/background/review.png
+description: Review-invitation guidance for journal editors.
+bg_image: /assets/generated/background/review.webp
 page_class: readable justified
 ---
 
@@ -18,7 +19,7 @@ Example prompt: "Given this abstract and Mathieu Gravey's background, is he a re
 ## Contact Addresses (Unlocked After Quick Questions)
 
 Review invitations:
-<a class="btn btn-outline-danger email-gate-trigger" data-review-email title="Unlock review email">Unlock review email</a>
+<a class="btn btn-publication email-gate-trigger" href="{{ '/contact/' | relative_url }}" data-review-email title="Unlock review email">Unlock review email</a>
 
 For non-review messages, use the regular contact page:  
 [Contact]({{ '/contact/' | relative_url }})
@@ -29,7 +30,8 @@ For non-review messages, use the regular contact page:
 
 2. **Direct decline link is mandatory.**  
 If I decide to decline and your email has no direct decline link (no account creation, no authentication, one-click decline with optional short justification), I will ignore the invitation and let the deadline expire. If your system already has an account with my first/family name, merge duplicates before inviting me. People change institutions, so email addresses also change over time, and I will not test all historical institutional emails to recover access.  
-If supported, use ORCID as login: [https://orcid.org/0000-0002-0871-1507](https://orcid.org/0000-0002-0871-1507)
+{% assign orcid_profile = site.data.person.social | where: 'key', 'orcid' | first %}
+If supported, use [ORCID]({{ orcid_profile.url }}) as the login.
 
 3. **Minimum review window: 4 weeks.**  
 If your standard deadline is shorter than 4 weeks, you are likely wasting time. I am often busy and I prefer to think carefully about reviews, so I will probably reject.

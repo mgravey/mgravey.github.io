@@ -2,7 +2,8 @@
 title: Why did I email you?
 layout: page
 permalink: /why-did-i-email-you/
-bg_image: /assets/img/background/why-i-email.png
+description: A short explanation of Mathieu Gravey’s direct email and follow-up style.
+bg_image: /assets/generated/background/why-i-email.webp
 nav: false
 page_class: readable justified
 ---

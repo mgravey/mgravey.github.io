@@ -1,60 +1,73 @@
-# Standard Jekyll deployment workflow for GitHub Pages
 name: Deploy Jekyll site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["jeykill-version"]
-
-  # Allows you to run this workflow manually from the Actions tab
+  pull_request:
+    branches: ["jeykill-version"]
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Build job
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install frontend dependencies
+        run: npm ci
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2' # Current stable version
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 0 # Increment this number if you need to re-download gems
+          ruby-version: "3.2"
+          bundler-cache: true
 
       - name: Setup Pages
         id: pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v5
 
-      - name: Generate Publications
-        run: ruby scripts/generate_publications.rb
+      - name: Validate authoritative content
+        run: npm run validate
+
+      - name: Generate optimized assets
+        run: npm run prepare:site
 
       - name: Build with Jekyll
-        # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build --strict_front_matter --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
 
-      - name: Upload artifact
-        # Automatically uploads the './_site' directory
-        uses: actions/upload-pages-artifact@v3
+      - name: Validate generated HTML
+        run: bundle exec htmlproofer ./_site --disable-external --allow-hash-href
 
-  # Deployment job
+      - name: Install browser
+        run: npx playwright install --with-deps chromium
+
+      - name: Run browser smoke tests
+        run: npm run test:e2e
+
+      - name: Upload artifact
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/jeykill-version'
+        uses: actions/upload-pages-artifact@v4
+
   deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/jeykill-version'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

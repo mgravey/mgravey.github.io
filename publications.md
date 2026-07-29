@@ -2,13 +2,16 @@
 title: Publications
 layout: page
 permalink: /publications/
-bg_image: /assets/img/background/berezina.jpg
+description: Peer-reviewed publications by Mathieu Gravey.
+bg_image: /assets/generated/background/berezina.webp
 page_class: readable justified
+nav_order: 50
 ---
 
 {% include render_filters.html scope='publications' %}
 
 
+<div data-filter-list="publications">
 {% if site.data.publications and site.data.publications.size > 0 %}
   {% assign pubs = site.data.publications %}
   {% assign years = pubs | map: 'year' | uniq | sort | reverse %}
@@ -18,15 +21,13 @@ page_class: readable justified
     <ul>
       {% for p in pubs %}
         {% if p.year == y %}
-        {% assign tagstr = p.flags | join: ',' %}
-        <li class="aPub" data-tags="{{ tagstr }}" data-rank="{{ p.rank | default: 9999 }}">
-          <span class="pub-authors">{{ p.authors_html }}</span> ({{ p.year }}). <strong>{{ p.title }}</strong>. <em>{{ p.venue }}</em>. <a href="https://doi.org/{{ p.doi }}">{{ p.doi }}</a>
-        </li>
+        {% include publication_item.html publication=p %}
         {% endif %}
       {% endfor %}
     </ul>
   </div>
   {% endfor %}
 {% else %}
-  <p class="muted">No publications loaded yet. Add DOIs in <code>_data/dois.yml</code>.</p>
+  <p class="muted">No publications are currently available.</p>
 {% endif %}
+</div>

@@ -2,9 +2,16 @@
   "name": "mgravey.github.io",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "assets": "node scripts/build-assets.js",
+    "bundle:js": "esbuild assets/js/app.js --bundle --minify --outfile=assets/dist/site.js",
+    "prepare:site": "npm run assets && npm run bundle:js",
+    "build": "npm run prepare:site && bundle exec jekyll build --strict_front_matter",
+    "serve": "npm run prepare:site && bundle exec jekyll serve --livereload --strict_front_matter",
+    "validate": "ruby scripts/validate_content.rb",
+    "test:e2e": "playwright test",
+    "test": "npm run validate && npm run build && bundle exec htmlproofer ./_site --disable-external --allow-hash-href && npm run test:e2e",
+    "publications": "ruby scripts/update_publications.rb"
   },
   "repository": {
     "type": "git",
@@ -13,13 +20,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "private": true,
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/mgravey/mgravey.github.io/issues"
   },
   "homepage": "https://github.com/mgravey/mgravey.github.io#readme",
   "devDependencies": {
-    "sharp": "^0.34.5",
-    "to-ico": "^1.1.5"
+    "@playwright/test": "^1.62.0",
+    "esbuild": "^0.28.1",
+    "sharp": "^0.35.3"
+  },
+  "dependencies": {
+    "@barba/core": "^2.10.3"
   }
 }

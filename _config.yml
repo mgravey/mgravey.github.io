@@ -1,16 +1,13 @@
 title: "Mathieu Gravey"
-description: "Personal website of a scientific researcher"
-url: "https://mgravey.github.io"
+description: "Researcher in geoscience, remote sensing, geostatistics, and scientific computing."
+url: "https://www.mgravey.com"
 baseurl: ""
 permalink: pretty
-timezone: Europe/Paris
-
-# Author info
-author_name: "Mathieu"
-author_last: "Gravey"
+timezone: Europe/Vienna
+lang: en
 
 # Appearance (CSS variables are in assets/css/main.scss)
-theme:
+palette:
   accent: "#4fb0ff"
   accent2: "#00d1b2"
   bg: "#0b0f14"
@@ -18,7 +15,11 @@ theme:
   muted: "#a5b0c2"
 
 # Default background image fallback
-default_bg: "/assets/img/background/starSky.jpg"
+default_bg: "/assets/generated/background/starSky.webp"
+
+transition:
+  effect: fade
+  duration_ms: 320
 
 # Jekyll settings
 markdown: kramdown
@@ -33,19 +34,19 @@ collections:
     output: true
 
 plugins:
-  - jekyll-feed
-
-# Social links (fill as needed)
-twitter: "https://twitter.com/mathieuGravey"
-researchgate: "https://www.researchgate.net/profile/Mathieu-Gravey"
-google_scholar: "https://www.mgravey.com/#googlescholar"
-github: "https://github.com/mgravey"
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 exclude:
   - node_modules
   - vendor
   - README.md
+  - CHANGES.md
   - Gemfile*
   - package*.json
   - .github
+  - tests
+  - playwright.config.js
+  - scripts
+  - assets/source-images
   - viewpoints

@@ -1,9 +1,11 @@
 ---
-title: Advices
+title: Advice
 layout: page
 permalink: /advices/
-bg_image: /assets/img/background/4student.jpg
+description: Practical advice for students and early-career researchers.
+bg_image: /assets/generated/background/4student.webp
 page_class: greek-nums readable justified
+nav_order: 80
 ---
 
 ## General Advice

@@ -1,24 +1,19 @@
 <!doctype html>
-<html lang="en" data-transition="fade" data-transition-duration="1000">
+<html class="no-js" lang="{{ site.lang | default: 'en' }}" data-transition="{{ site.transition.effect }}" data-transition-duration="{{ site.transition.duration_ms }}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title | default: site.title }}</title>
-    <meta name="description" content="{{ page.description | default: site.description }}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>document.documentElement.classList.remove("no-js");</script>
+    {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400;600&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     {% include head-extra.html %}
   </head>
   <body data-barba="wrapper">
+    <a class="skip-link" href="#main">Skip to main content</a>
     {% include header.html %}
     <div class="bg-layer bg-a is-active" aria-hidden="true" style="--bg-image: url('{{ page.bg_image | default: site.default_bg }}')"></div>
     <div class="bg-layer bg-b" aria-hidden="true" style="--bg-image: url('{{ page.bg_image | default: site.default_bg }}')"></div>
-    <main id="main" data-barba="container" data-barba-namespace="{{ page.slug | default: page.permalink | default: page.title | default: 'page' }}" data-bg="{{ page.bg_image | default: site.default_bg }}">
+    <main id="main" tabindex="-1" data-barba="container" data-barba-namespace="{{ page.title | slugify | default: 'page' }}" data-bg="{{ page.bg_image | default: site.default_bg }}">
       <div class="container">
         {{ content }}
       </div>
@@ -26,14 +21,7 @@
     {% include footer.html %}
 
     <script id="survey-config" type="application/json">{{ site.data.survey | jsonify }}</script>
-
-    <!-- Barba.js via CDN -->
-    <script src="https://unpkg.com/@barba/core"></script>
-    <script src="{{ '/assets/js/layout.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/nav.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/email.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/filter.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/barba-init.js' | relative_url }}"></script>
-    <script src="{{ '/assets/js/site.js' | relative_url }}"></script>
+    <script id="contact-config" type="application/json">{{ site.data.person.contact | jsonify }}</script>
+    <script defer src="{{ '/assets/dist/site.js' | relative_url }}"></script>
   </body>
-  </html>
+</html>

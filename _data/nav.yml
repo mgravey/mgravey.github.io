@@ -1,32 +1,5 @@
-- title: About
-  url: /
-  show: true
-- title: Research
-  url: /research/
-  show: true
-- title: Projects
-  url: /projects/
-  show: true
-- title: Code & Software
-  url: /code-software/
-  show: true
-- title: Publications
-  url: /publications/
-  show: true
-- title: Experience & Skills
-  url: /experience-skills/
-  show: true
-- title: Advices
-  url: /advices/
-  show: true
 - title: Viewpoints
-  url: /viewpoints/
-  show: true
+  url: https://www.mgravey.com/viewpoints/
+  order: 90
+  group: more
   barba_prevent: true
-- title: Contact
-  url: /contact/
-  show: true
-- title: 4Students
-  url: /4students/
-  show: true
-# Hidden page is intentionally not listed

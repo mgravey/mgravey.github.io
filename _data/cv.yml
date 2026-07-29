@@ -1,0 +1,148 @@
+experience:
+  - id: oeaw-igf
+    start: 2023
+    end: present
+    display_date: 2023–present
+    role: Researcher (formerly Junior Group Leader)
+    institution: Institute for Interdisciplinary Mountain Research, Austrian Academy of Sciences
+    location: Innsbruck, Austria
+    url: https://www.oeaw.ac.at/en/igf/home
+    details: Remote sensing, geostatistics, and machine learning for geoscience.
+  - id: utrecht
+    start: 2021
+    end: 2023
+    display_date: 2021–2023
+    role: Assistant Professor in Geo-Environmental Data Science
+    institution: Utrecht University
+    url: https://www.uu.nl/staff/MGravey
+    details: Used machine-learning frameworks to enhance geoscience.
+  - id: stanford
+    start: 2021
+    end: 2021
+    display_date: February–fall 2021
+    role: Postdoctoral Researcher
+    institution: Department of Geological Sciences, Stanford University
+    url: https://scerf.stanford.edu/
+    details: Bridged machine learning and geostatistical simulation in Jef Caers’ Center for Earth Resources Forecasting team.
+  - id: unil-postdoc
+    start: 2020
+    end: 2020
+    display_date: March–July 2020
+    role: Postdoctoral Researcher
+    institution: Institute of Geography and Sustainability, University of Lausanne
+    details: Studied forest regrowth in Vietnam through remote-sensing analysis from 1984 onwards in Christian Kull’s team.
+  - id: cern
+    start: 2016
+    end: 2016
+    display_date: June–August 2016
+    role: Intern
+    institution: CERN OpenLab
+    details: Contributed to the GeantV software project for large-scale stochastic simulation of fundamental particles, supervised by Andrei Gheata and Maria Girone.
+  - id: unil-assistant
+    start: 2015
+    end: 2015
+    display_date: June–December 2015
+    role: Assistant Researcher
+    institution: Institute of Earth Surface Dynamics, University of Lausanne
+    details: Developed a method to complete gaps automatically in point-cloud datasets, supervised by Grégoire Mariéthoz.
+  - id: bfh
+    start: 2014
+    end: 2014
+    display_date: March–December 2014
+    role: Intern / Research Assistant
+    institution: cpvrLab, Bern University of Applied Sciences
+    details: Developed image-processing and photogrammetric methods for an automatic camera that scans manholes in 3D, supervised by Marcus Hudritsch.
+
+education:
+  - id: phd-unil
+    start: 2016
+    end: 2020
+    display_date: 2016–2020
+    degree: PhD
+    institution: Institute of Earth Surface Dynamics, University of Lausanne
+    url: https://unil.ch/gaia
+    details: "Thesis: Multiple-point geostatistical approaches to spectrally enhance satellite imagery. Supervisor: Grégoire Mariéthoz. Defended 8 January 2020."
+  - id: engineering-ema
+    start: 2011
+    end: 2014
+    display_date: 2011–2014
+    degree: Engineering degree
+    institution: École des Mines d’Alès
+    details: General engineering and computer science, with an innovation option.
+  - id: preparatory
+    start: 2008
+    end: 2011
+    display_date: 2008–2011
+    degree: Preparatory class, MPSI/MP*
+    institution: Lycée Albert Schweitzer, Mulhouse
+    details: Advanced mathematics, physics, and algorithms.
+
+awards:
+  - year: 2022
+    organization: Google
+    title: Google Developer Expert in Earth Engine
+  - year: 2022
+    organization: NVIDIA
+    title: Academic Hardware Grant Program — A100
+  - year: 2021
+    organization: Swiss National Science Foundation
+    title: Early Postdoc.Mobility
+  - year: 2019
+    organization: International Association for Mathematical Geosciences
+    title: Student travel grant
+  - year: 2015
+    organization: Intel
+    title: Grand Prize, Modern Code Developer Challenge
+
+skills:
+  programming:
+    - name: Google Earth Engine
+      level: Google Developer Expert
+    - name: C / C++ / OpenMP
+      level: Advanced
+    - name: MATLAB
+      level: Advanced
+    - name: Python
+      level: Advanced
+    - name: TensorFlow
+      level: Advanced
+    - name: CUDA / OpenGL / OpenCL
+      level: Advanced
+    - name: Shell / Bash
+      level: Advanced
+    - name: Emscripten
+      level: Advanced
+    - name: JavaScript / HTML / CSS
+      level: Advanced
+    - name: Markdown
+      level: Advanced
+    - name: LaTeX
+      level: Intermediate
+    - name: R
+      level: Intermediate
+    - name: Maple
+      level: Intermediate
+    - name: Java
+      level: Intermediate
+    - name: SQL
+      level: Intermediate
+    - name: OWL / SPARQL
+      level: Intermediate
+  interfacing:
+    - MATLAB ⇄ Python
+    - Python ⇄ C/C++
+    - MATLAB ⇄ C/C++
+  software:
+    - Sublime Text
+    - Git
+    - Illustrator
+    - Microsoft Office
+    - Cinema 4D
+    - QGIS
+  languages:
+    - name: French
+      level: Native
+    - name: English
+      level: Professional
+    - name: German
+      level: Basic

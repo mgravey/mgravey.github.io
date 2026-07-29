@@ -1,0 +1,500 @@
+---
+- id: quicksampling-an-efficient-and-robust-mps-approach
+  types:
+  - project
+  title: 'QuickSampling: an efficient and robust MPS approach'
+  description: A robust, efficient multiple-point statistics algorithm implemented in the G2S framework.
+  years:
+    start: 2017
+    finish: 2020
+  status:
+  - finished
+  - maintained
+  tags:
+  - mps
+  - python
+  image: https://gmd.copernicus.org/articles/13/2611/2020/gmd-13-2611-2020-avatar-web.png
+  rank: 10
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/GAIA-UNIL/G2S
+  - kind: documentation
+    label: Guide
+    url: https://gaia-unil.github.io/G2S/
+  - kind: publication
+    label: GMD 2020
+    url: https://doi.org/10.5194/gmd-13-2611-2020
+- id: satellite-image-colorization
+  types:
+  - project
+  title: Satellite image colorization
+  description: The main output of this project is an algorithm — Narrow Distribution Selection (NDS) — to spectrally enhance remotely sensed satellite images, similar in spirit to QuickSampling.
+  years:
+    start: 2016
+    finish: 2018
+  status:
+  - finished
+  tags:
+  - mps
+  - rs
+  image: "/assets/imageContent/NDS.jpg"
+  rank: 15
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/GAIA-UNIL/G2S
+  - kind: documentation
+    label: Guide
+    url: https://gaia-unil.github.io/G2S/
+  - kind: publication
+    label: ISPRS 2018
+    url: https://doi.org/10.1016/j.isprsjprs.2018.11.003
+- id: auto-qs-training-image-based-automatic-calibration-of-direct-pixel-mps-algorithm
+  types:
+  - project
+  title: 'Auto QS: Training image based automatic calibration of direct-pixel MPS algorithm'
+  description: Alternative calibration for QS/DS based on training image analysis to reduce verbatim copy without complex objective functions.
+  years:
+    start: 2019
+    finish: 2023
+  status:
+  - ongoing
+  - maintained
+  tags:
+  - mps
+  rank: 12
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/GAIA-UNIL/G2S
+  - kind: documentation
+    label: AutoQS Docs
+    url: https://gaia-unil.github.io/G2S/algorithms/AutoQS.html
+  - kind: publication
+    label: GMD 2023
+    url: https://doi.org/10.5194/gmd-16-5265-2023
+- id: effect-of-resolution-change-on-remote-sensed-analysis
+  types:
+  - project
+  title: Effect of resolution change on remote sensed analysis
+  description: Exploring effects and errors introduced by spatial resolution changes in remote sensing applications.
+  years:
+    start: 2020
+    finish: 2022
+  status:
+  - ongoing
+  tags:
+  - rs
+  rank: 18
+  links: []
+- id: fastds
+  types:
+  - project
+  title: FastDS
+  description: Enhances Direct Sampling by predicting potential candidates to avoid trivial mismatches — akin to moving from naive rejection sampling to adaptive sampling.
+  years:
+    start: 2019
+  status:
+  - ongoing
+  - collaboration
+  - side
+  tags:
+  - mps
+  rank: 22
+  links: []
+- id: snow-vegetation-trend-in-the-alps
+  types:
+  - project
+  title: Snow-Vegetation trend in the Alps
+  description: Studying the evolution of snow and vegetation over the last 35+ years in the Alps.
+  years:
+    start: 2017
+    finish: 2022
+  status:
+  - finished
+  - collaboration
+  - side
+  tags:
+  - rs
+  rank: 25
+  links:
+  - kind: publication
+    label: Science 2022
+    url: https://doi.org/10.1126/science.abn6697
+- id: cheetah
+  types:
+  - project
+  title: Cheetah
+  description: 'From Impala and SNESIM: encode a k‑class n‑point pattern in k n‑bit numbers; exploring FPGA for performance and power gains.'
+  years:
+    start: 2019
+  status:
+  - ongoing
+  - side
+  tags:
+  - mps
+  rank: 28
+  links: []
+- id: mazalib
+  types:
+  - project
+  title: MAZAlib
+  description: Tools and interfaces to segment porous media scans easily.
+  years:
+    start: 2020
+  status:
+  - ongoing
+  - collaboration
+  - side
+  tags: []
+  rank: 30
+  links: []
+- id: tracking-of-vegetation-evolution-growth-in-vietnam
+  types:
+  - project
+  title: Tracking of vegetation evolution (growth) in Vietnam
+  description: Tracking the type and growth of vegetation in Vietnam.
+  years:
+    start: 2019
+  status:
+  - ongoing
+  - collaboration
+  - side
+  tags:
+  - rs
+  rank: 24
+  links:
+  - kind: documentation
+    label: Website
+    url: https://www.ftviet.info
+  - kind: publication
+    label: Land Use Policy 2023
+    url: https://doi.org/10.1016/j.landusepol.2023.106887
+- id: glacier-tracking
+  types:
+  - project
+  title: Glacier tracking
+  description: High-frequency, high-resolution time series of Gornergletscher from repeated UAV surveys; implemented the tracking algorithm.
+  years:
+    start: 2017
+    finish: 2018
+  status:
+  - finished
+  - collaboration
+  - side
+  tags:
+  - rs
+  rank: 26
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/GAIA-UNIL/MatchingMapMaker
+  - kind: publication
+    label: ESSD 2018
+    url: https://doi.org/10.5194/essd-2018-145
+- id: open-earth-engine-library
+  types:
+  - project
+  - software
+  title: Open Earth Engine Library
+  description: The Open Earth Engine Library (OEEL) provides free and open algorithms for Google Earth Engine users.
+  years:
+    start: 2020
+    finish: 2021
+  status:
+  - finished
+  - side
+  - maintained
+  tags:
+  - rs
+  - gee
+  image: https://www.open-geocomputing.org/OpenEarthEngineLibrary/logo_white.svg
+  rank: 23
+  links:
+  - kind: code
+    label: Examples
+    url: https://github.com/open-geocomputing/OpenEEL_Examples
+  - kind: documentation
+    label: Website
+    url: https://www.open-geocomputing.org/OpenEarthEngineLibrary/
+  - kind: code
+    label: Code
+    url: https://github.com/open-geocomputing/OpenEarthEngineLibrary
+- id: tracking-bird-migration-using-pressure
+  types:
+  - project
+  title: Tracking bird migration using pressure
+  description: This project uses pressure instead of light to determine the position of birds during migration.
+  years:
+    start: 2021
+    finish: 2022
+  status:
+  - ongoing
+  - collaboration
+  tags: []
+  rank: 21
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/Rafnuss/GeoPressureR
+  - kind: documentation
+    label: GeoPressureR Docs
+    url: https://raphaelnussbaumer.com/GeoPressureR/
+  - kind: documentation
+    label: GEE App
+    url: https://rafnuss.users.earthengine.app/view/pressuregeolocator
+  - kind: publication
+    label: Methods Ecol Evol 2023a
+    url: https://doi.org/10.1111/2041-210x.14043
+  - kind: publication
+    label: Methods Ecol Evol 2023b
+    url: https://doi.org/10.1111/2041-210x.14082
+- id: g2s-the-geostatistical-server
+  types:
+  - software
+  title: 'G2S: The GeoStatistical Server'
+  description: The GeoStatistical Server (G2S) is a framework that allows you to run state-of-the-art Multiple Point Statistics (MPS) algorithms across languages.
+  years: {}
+  status:
+  - maintained
+  tags:
+  - mps
+  - matlab
+  - python
+  rank: 5
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/GAIA-UNIL/G2S
+  - kind: documentation
+    label: Guide
+    url: https://gaia-unil.github.io/G2S/
+- id: nds-narrow-distribution-selection
+  types:
+  - software
+  title: 'NDS: Narrow Distribution Selection'
+  description: NDS is a tool to guide simulation choices by narrowing distributions in multi-point statistics workflows.
+  years: {}
+  status: []
+  tags:
+  - mps
+  - python
+  rank: 15
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/GAIA-UNIL/G2S
+  - kind: documentation
+    label: Documentation
+    url: https://gaia-unil.github.io/G2S/algorithms.html
+- id: open-earth-engine-extension
+  types:
+  - software
+  title: Open Earth Engine extension
+  description: A Chrome extension to enhance the Google Earth Engine user experience.
+  years: {}
+  status:
+  - maintained
+  tags:
+  - rs
+  - gee
+  image: https://www.open-geocomputing.org/OpenEarthEngineLibrary/logo_white.svg
+  rank: 0
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/open-geocomputing/OEEex
+  - kind: documentation
+    label: Documentation
+    url: https://www.open-geocomputing.org/OEEex/
+  - kind: documentation
+    label: Chrome Web Store
+    url: https://chrome.google.com/webstore/detail/open-earth-engine-extensi/dhkobehdekjgdahfldleahkekjffibhg
+- id: integration-effect-on-gender-ratio
+  types:
+  - software
+  title: Integration effect on gender ratio
+  description: Interactive study to evaluate how long it takes to correct gender bias as a function of career duration.
+  years: {}
+  status: []
+  tags:
+  - web
+  - other
+  rank: 10
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/mgravey/Integrate-gender-ratio
+  - kind: documentation
+    label: Online
+    url: https://www.mgravey.com/Integrate-gender-ratio/
+- id: useful-micro-toolset-for-statistical-metric
+  types:
+  - software
+  title: Useful micro toolset for statistical metric
+  description: A few Matlab functions to compute nD variograms and 2D cumulants.
+  years: {}
+  status: []
+  tags:
+  - mps
+  - matlab
+  rank: 9
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/mgravey/spatialstats-utilitary-matlab
+- id: mexinterrupt
+  types:
+  - software
+  title: MexInterrupt
+  description: Example of interrupting C/C++ code in a Matlab MEX file.
+  years: {}
+  status: []
+  tags:
+  - other
+  - matlab
+  rank: 5
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/mgravey/MexInterrupt
+- id: random-kmin-kmax
+  types:
+  - software
+  title: Random Kmin/Kmax
+  description: Header-only library to find k smallest/largest values and indices in an unsorted array; optimized with intrinsics, MATLAB wrapper provided.
+  years: {}
+  status: []
+  tags:
+  - other
+  - matlab
+  rank: 5
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/mgravey/randomKmin-max
+- id: 2d-dynamic-warping
+  types:
+  - software
+  title: 2D Dynamic Warping
+  description: C/C++ implementation of 2D Dynamic Time Warping. See the original publication for details.
+  years: {}
+  status: []
+  tags:
+  - other
+  rank: 6
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/mgravey/2DDW
+  - kind: documentation
+    label: Publication
+    url: https://doi.org/10.1109/CVPR.2004.324
+- id: pydev4g2s
+  types:
+  - software
+  title: pyDev4G2S
+  description: Module to develop new MPS algorithms in Python, leveraging G2S for remote connections and interfacing with other languages.
+  years: {}
+  status: []
+  tags:
+  - other
+  - python
+  rank: 5
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/GAIA-UNIL/pyDev4G2S
+- id: g2s-for-qgis
+  types:
+  - software
+  title: G2S for QGIS
+  description: QGIS interface for G2S to run remote-sensing stochastic simulations directly in QGIS.
+  years: {}
+  status: []
+  tags:
+  - rs
+  - mps
+  rank: 6
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/GAIA-UNIL/G2S-4-QGIS
+- id: pyqs-pyds
+  types:
+  - software
+  title: PyQS-PyDS
+  description: Minimal Python code to grasp how Direct Sampling and QuickSampling work. Focused on core concepts over performance.
+  years: {}
+  status: []
+  tags:
+  - mps
+  - python
+  rank: 7
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/GAIA-UNIL/PyQS-PyDS
+- id: matching-map-maker
+  types:
+  - software
+  title: Matching Map Maker
+  description: Pattern matching between very large images (50k x 50k), useful to follow slow, deformable objects over time (e.g., glaciers).
+  years: {}
+  status: []
+  tags:
+  - rs
+  - matlab
+  rank: 7
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/GAIA-UNIL/MatchingMapMaker
+- id: fast-gaussian-simulation
+  types:
+  - software
+  title: Fast Gaussian Simulation
+  description: Matlab function to generate multiple n-D Gaussian fields quickly using FFT; reduces edge effects on long range.
+  years: {}
+  status: []
+  tags:
+  - other
+  - matlab
+  rank: 6
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/GAIA-UNIL/FastGaussianSimulation
+- id: tiff-training-images
+  types:
+  - software
+  title: TIFF Training Images
+  description: A set of training images useful for MPS, saved as TIFF to load directly from GitHub in a few lines — ideal for demos.
+  years: {}
+  status: []
+  tags:
+  - mps
+  - matlab
+  - python
+  rank: 3
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/GAIA-UNIL/TrainingImagesTIFF
+- id: geopressureapi
+  types:
+  - software
+  title: GeoPressureAPI
+  description: Server returning probability of bird position from pressure records using Google Earth Engine access to ERA‑5.
+  years: {}
+  status: []
+  tags:
+  - rs
+  - python
+  - gee
+  rank: 3
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/Rafnuss/GeoPressureAPI

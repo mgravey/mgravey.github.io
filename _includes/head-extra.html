@@ -6,5 +6,6 @@
 <link rel="icon" type="image/png" sizes="64x64" href="{{ '/assets/img/favicon-64.png' | relative_url }}">
 <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}" sizes="180x180">
-<meta name="theme-color" content="#0f172a">
-<!-- Extra head tags placeholder: icons, meta, etc. -->
+<meta name="theme-color" content="{{ site.palette.bg }}">
+<meta property="og:image" content="{{ site.data.person.portrait | absolute_url }}">
+<meta name="twitter:image" content="{{ site.data.person.portrait | absolute_url }}">
