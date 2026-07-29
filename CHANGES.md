@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Preserved Ruby 3.2 CI compatibility by constraining `console` to its 1.34 series.
 - Consolidated profile, CV, portfolio, publication, taxonomy, contact, and navigation data.
 - Replaced separate project and software markup with a shared Jekyll renderer.
 - Replaced duplicate DOI workflows with one committed publication catalog and updater.

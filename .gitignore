@@ -6,6 +6,7 @@
 /assets/dist
 /assets/generated
 /.jekyll-cache
+/.jekyll-metadata
 /.sass-cache
 /playwright-report
 /test-results
