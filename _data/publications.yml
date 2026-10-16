@@ -1,4 +1,25 @@
 ---
+- doi: 10.1038/s41598-026-63971-5
+  flags:
+  - climate
+  - rs
+  rank: 9999
+  title: Daily MODIS land surface temperature trends reveal dual winter warming peaks in the Swiss Alps
+  year: 2026
+  venue: Scientific Reports
+  authors:
+  - given: Andrés
+    family: Lo Vecchio
+  - given: Mathieu
+    family: Gravey
+  - given: Esteban
+    family: Lannutti
+  - given: Fernando
+    family: Ruiz Peyré
+  - given: Oliver
+    family: Bender
+  - given: Ricardo
+    family: Villalba
 - doi: 10.1016/j.jag.2026.105088
   flags:
   - ecology
@@ -22,6 +43,23 @@
   - given: Sabine B.
     family: Rumpf
     orcid: 0000-0001-5909-9568
+- doi: 10.1016/j.cageo.2026.106217
+  flags:
+  - geostatistics
+  - simulation
+  - method
+  - first-author
+  rank: 9999
+  title: Near-optimal, path-level parallelization for sequential geostatistical simulation
+  year: 2026
+  venue: Computers &amp; Geosciences
+  authors:
+  - given: Mathieu
+    family: Gravey
+    orcid: 0000-0002-0871-1507
+  - given: Luiz Gustavo
+    family: Rasera
+    orcid: 0000-0001-6169-5705
 - doi: 10.1134/s1064229325603130
   flags:
   - mps

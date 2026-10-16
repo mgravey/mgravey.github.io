@@ -12,3 +12,6 @@
 /playwright-report
 /test-results
 viewpoints
+
+# Temporary catalog written by the publication updater
+/_data/publications.yml.tmp

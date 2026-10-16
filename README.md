@@ -60,6 +60,12 @@ npm run publications -- 10.xxxx/example
 Review the updated `_data/publications.yml`, add any local flags or rank, run
 `npm run validate`, and commit the resulting single catalog.
 
+You can pass multiple DOIs (or full DOI URLs) in one command. Existing DOIs
+are skipped case-insensitively, so a mixed list of new and existing publications
+is safe to import. Metadata comes from Crossref; assign filter flags manually
+using the keys in `_data/taxonomy.yml`. Use `npm run publications -- --refresh`
+to refresh existing metadata; this does not discover new publications.
+
 Original photographs live under `assets/source-images`. The asset task produces
 WebP copies below the enforced transfer-size limits.
 
