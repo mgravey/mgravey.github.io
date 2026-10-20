@@ -20,7 +20,8 @@ Page-specific essays and guidance stay in their Markdown pages. Do not copy
 profile, CV, publication, project, or software facts into page prose.
 All destinations are shown directly in the desktop navigation bar; the same
 ordered list becomes a flat drawer on narrower screens. The homepage biography
-links to the Digital Landscape Group website.
+identifies Mathieu as head of the Digital Landscape Group and links to its
+website.
 
 ## Local development
 

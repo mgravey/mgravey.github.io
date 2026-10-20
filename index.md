@@ -55,7 +55,7 @@ nav_label: About
 
 I also publish short opinion notes in <a href="https://www.mgravey.com/viewpoints/" data-barba-prevent="all">Viewpoints</a>.
 
-I am a member of the <a href="https://digital-landscape.at/" data-barba-prevent="all">Digital Landscape Group</a>.
+I am head of the <a href="https://digital-landscape.at/" data-barba-prevent="all">Digital Landscape Group</a>.
 
 If you’re a student, see [Advice](/advices/) and [For Students](/4students/).
 
