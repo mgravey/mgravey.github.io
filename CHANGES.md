@@ -2,8 +2,7 @@
 
 ## Unreleased
 
-- Updated the homepage biography to describe Mathieu as head of the Digital Landscape Group.
-- Linked the Digital Landscape Group from the homepage biography.
+- Integrated Mathieu's Digital Landscape Group leadership into the opening biography.
 - Upgraded local development and GitHub Actions from Ruby 3.2 to Ruby 4.0.
 - Consolidated profile, CV, portfolio, publication, taxonomy, contact, and navigation data.
 - Replaced separate project and software markup with a shared Jekyll renderer.

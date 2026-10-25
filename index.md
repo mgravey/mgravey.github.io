@@ -18,7 +18,8 @@ nav_label: About
       <p class="eyebrow">{{ site.data.person.headline }}</p>
       <p class="intro-copy">
         I am a {{ current_role.role }} at
-        <a href="{{ current_role.url }}">{{ current_role.institution }}</a> in {{ current_role.location }}.
+        <a href="{{ current_role.url }}">{{ current_role.institution }}</a> in {{ current_role.location }},
+        and head of the <a href="https://digital-landscape.at/" data-barba-prevent="all">Digital Landscape Group</a>.
         My {{ phd.degree }} from <a href="{{ phd.url }}">{{ phd.institution }}</a> focused on geostatistics,
         which remains a core pillar of my work.
       </p>
@@ -54,8 +55,6 @@ nav_label: About
 {{ site.data.person.current_work }}
 
 I also publish short opinion notes in <a href="https://www.mgravey.com/viewpoints/" data-barba-prevent="all">Viewpoints</a>.
-
-I am head of the <a href="https://digital-landscape.at/" data-barba-prevent="all">Digital Landscape Group</a>.
 
 If you’re a student, see [Advice](/advices/) and [For Students](/4students/).
 
