@@ -328,7 +328,7 @@
     url: https://github.com/mgravey/Integrate-gender-ratio
   - kind: documentation
     label: Online
-    url: https://www.mgravey.com/Integrate-gender-ratio/
+    url: https://mgravey.com/Integrate-gender-ratio/
 - id: device-melted-ice
   types:
   - software
@@ -346,7 +346,7 @@
     url: https://github.com/mgravey/deviceMeltedIce
   - kind: documentation
     label: Online
-    url: https://www.mgravey.com/deviceMeltedIce/
+    url: https://mgravey.com/deviceMeltedIce/
 - id: useful-micro-toolset-for-statistical-metric
   types:
   - software

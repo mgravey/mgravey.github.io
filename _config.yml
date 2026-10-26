@@ -2,7 +2,7 @@ title: "Mathieu Gravey"
 description: "Researcher in geoscience, remote sensing, geostatistics, and scientific computing."
 # Used by jekyll-seo-tag for the homepage <title>: "Mathieu Gravey | <tagline>"
 tagline: "Researcher in Geoscience, Remote Sensing & Geostatistics"
-url: "https://www.mgravey.com"
+url: "https://mgravey.com"
 baseurl: ""
 permalink: pretty
 timezone: Europe/Vienna

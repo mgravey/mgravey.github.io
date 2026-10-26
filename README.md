@@ -15,7 +15,7 @@ Reusable information is maintained once:
 - `_data/taxonomy.yml` — tag labels, groups, filter visibility, and logos.
 - Page front matter — each page’s title, permalink, description, background, and navigation order.
 - `_data/nav.yml` — external navigation entries only. Viewpoints intentionally remains a separate site.
-- `_data/subsites.yml` — other GitHub Pages sites under `www.mgravey.com/…`, listed in `/sitemap.xml` and `/llms.txt`.
+- `_data/subsites.yml` — other GitHub Pages sites under `mgravey.com/…`, listed in `/sitemap.xml` and `/llms.txt`.
 
 Page-specific essays and guidance stay in their Markdown pages. Do not copy
 profile, CV, publication, project, or software facts into page prose.
@@ -103,7 +103,7 @@ JavaScript-free fallback.
 `.github/workflows/pages.yml` validates pull requests targeting
 `jeykill-version`. Pushes to that branch run the same checks and deploy the
 generated `_site` artifact to GitHub Pages. The canonical domain is
-`https://www.mgravey.com`.
+`https://mgravey.com` (`www.mgravey.com` redirects to it).
 
 Viewpoints is deployed independently at `/viewpoints/`; its links deliberately
 bypass Barba with `data-barba-prevent="all"`.

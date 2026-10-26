@@ -1,22 +1,22 @@
-# Independent GitHub Pages sites served under www.mgravey.com/<repo>/.
+# Independent GitHub Pages sites served under mgravey.com/<repo>/.
 # At build time, _plugins/subsites.rb reads each live site: its sitemap.xml (if
 # present, added to the /sitemap.xml index; otherwise `url` is listed in
 # /sitemap-pages.xml), Last-Modified date, meta description and llms.txt.
 # Nothing here has to change when a sub-site evolves; rebuild this site to
 # pick it up. Any of `sitemap`, `lastmod`, `description`, `llms` set here wins.
 - title: Viewpoints
-  url: https://www.mgravey.com/viewpoints/
+  url: https://mgravey.com/viewpoints/
 - title: QS browser preview (mps.online)
-  url: https://www.mgravey.com/mps.online/
+  url: https://mgravey.com/mps.online/
 - title: Integration effect on gender ratio
-  url: https://www.mgravey.com/Integrate-gender-ratio/
+  url: https://mgravey.com/Integrate-gender-ratio/
 - title: Sea ice melt from electricity use
-  url: https://www.mgravey.com/deviceMeltedIce/
+  url: https://mgravey.com/deviceMeltedIce/
 - title: Essentials4GPT
-  url: https://www.mgravey.com/Essentials4GPT/
+  url: https://mgravey.com/Essentials4GPT/
 - title: Loom.js
-  url: https://www.mgravey.com/loom.js/
+  url: https://mgravey.com/loom.js/
 - title: Lottie frame to SVG
-  url: https://www.mgravey.com/lottie2svg/
+  url: https://mgravey.com/lottie2svg/
 - title: Markroot
-  url: https://www.mgravey.com/Markroot/
+  url: https://mgravey.com/Markroot/

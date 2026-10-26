@@ -55,7 +55,7 @@ nav_label: About
 ## Current Work
 {{ site.data.person.current_work }}
 
-I also publish short opinion notes in <a href="https://www.mgravey.com/viewpoints/" data-barba-prevent="all">Viewpoints</a>.
+I also publish short opinion notes in <a href="https://mgravey.com/viewpoints/" data-barba-prevent="all">Viewpoints</a>.
 
 If you’re a student, see [Advice](/advices/) and [For Students](/4students/).
 

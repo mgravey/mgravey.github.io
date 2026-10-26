@@ -45,7 +45,7 @@ def fetch_crossref(doi, attempts: 3)
   attempts.times do |attempt|
     request = Net::HTTP::Get.new(uri)
     request["Accept"] = "application/json"
-    request["User-Agent"] = "mgravey.github.io publication updater (https://www.mgravey.com/contact/)"
+    request["User-Agent"] = "mgravey.github.io publication updater (https://mgravey.com/contact/)"
     response = Net::HTTP.start(
       uri.host,
       uri.port,
