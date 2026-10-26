@@ -59,6 +59,16 @@ async function main() {
     const size = await encodeWithinLimit(source, output, 900, portraitTarget);
     console.log(`${path.relative(root, output)} ${Math.round(size / 1024)} KB`);
   }
+
+  // Link previews (LinkedIn, Mastodon, chat apps) do not all accept WebP.
+  const socialImage = path.join(outputRoot, "MathieuGravey_current.jpg");
+  await sharp(path.join(sourceRoot, "MathieuGravey_current.png"))
+    .rotate()
+    .resize(900, 900, { fit: "inside", withoutEnlargement: true })
+    .flatten({ background: "#0b0f14" })
+    .jpeg({ quality: 82, mozjpeg: true })
+    .toFile(socialImage);
+  console.log(`${path.relative(root, socialImage)} ${Math.round((await fs.stat(socialImage)).size / 1024)} KB`);
 }
 
 main().catch((error) => {

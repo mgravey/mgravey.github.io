@@ -7,5 +7,8 @@
 <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{{ '/assets/img/apple-touch-icon.png' | relative_url }}" sizes="180x180">
 <meta name="theme-color" content="{{ site.palette.bg }}">
-<meta property="og:image" content="{{ site.data.person.portrait | absolute_url }}">
-<meta name="twitter:image" content="{{ site.data.person.portrait | absolute_url }}">
+<meta property="og:image" content="{{ site.data.person.social_image | absolute_url }}">
+<meta property="og:image:alt" content="{{ site.data.person.portrait_alt }}">
+<meta name="twitter:image" content="{{ site.data.person.social_image | absolute_url }}">
+<link rel="alternate" type="text/markdown" title="LLM-friendly summary" href="{{ '/llms.txt' | relative_url }}">
+{% include structured-data.html %}

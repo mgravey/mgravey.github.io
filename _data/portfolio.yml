@@ -329,6 +329,24 @@
   - kind: documentation
     label: Online
     url: https://www.mgravey.com/Integrate-gender-ratio/
+- id: device-melted-ice
+  types:
+  - software
+  title: How much Arctic sea ice does your electricity melt?
+  description: Calculator converting the electricity used by a device, from a light bulb to AI prompts and GPU servers, into CO₂ emissions and lost Arctic sea ice, using country-specific grid carbon intensity.
+  years: {}
+  status: []
+  tags:
+  - web
+  - other
+  rank: 10
+  links:
+  - kind: code
+    label: Code
+    url: https://github.com/mgravey/deviceMeltedIce
+  - kind: documentation
+    label: Online
+    url: https://www.mgravey.com/deviceMeltedIce/
 - id: useful-micro-toolset-for-statistical-metric
   types:
   - software

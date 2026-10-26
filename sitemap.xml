@@ -1,0 +1,17 @@
+---
+layout: null
+permalink: /sitemap.xml
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap>
+    <loc>{{ '/sitemap-pages.xml' | absolute_url }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+  </sitemap>
+{%- for item in site.data.subsites %}{% if item.sitemap %}
+  <sitemap>
+    <loc>{{ item.sitemap }}</loc>
+  </sitemap>
+{%- endif %}{% endfor %}
+</sitemapindex>

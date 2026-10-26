@@ -1,0 +1,22 @@
+---
+layout: null
+permalink: /sitemap-pages.xml
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- assign pages = site.pages | where_exp: "item", "item.sitemap != false" | sort: "url" %}
+{%- for item in pages %}{% unless item.url contains '.' %}
+  <url>
+    <loc>{{ item.url | absolute_url }}</loc>
+  </url>
+{%- endunless %}{% endfor %}
+{%- for item in site.data.subsites %}{% unless item.sitemap %}
+  <url>
+    <loc>{{ item.url }}</loc>
+{%- if item.lastmod %}
+    <lastmod>{{ item.lastmod }}</lastmod>
+{%- endif %}
+  </url>
+{%- endunless %}{% endfor %}
+</urlset>

@@ -1,14 +1,20 @@
 given_name: Mathieu
 family_name: Gravey
 headline: Researcher in geoscience, remote sensing, and scientific computing
+job_title: Researcher
 location: Innsbruck, Austria
 current_experience_id: oeaw-igf
 featured_experience_ids:
   - utrecht
   - stanford
 featured_education_id: phd-unil
+led_group:
+  name: Digital Landscape Group
+  url: https://digital-landscape.at/
 portrait: /assets/generated/MathieuGravey_current.webp
 portrait_alt: Mathieu Gravey
+# JPEG copy of the portrait for link previews (some platforms reject WebP)
+social_image: /assets/generated/MathieuGravey_current.jpg
 previous_portrait: /assets/generated/MathieuGravey_old.webp
 
 focus_areas:

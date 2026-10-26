@@ -1,0 +1,34 @@
+---
+layout: null
+permalink: /llms.txt
+sitemap: false
+---
+{%- assign person = site.data.person -%}
+{%- assign current_role = site.data.cv.experience | where: 'id', person.current_experience_id | first -%}
+# {{ person.given_name }} {{ person.family_name }}
+
+> {{ person.headline }}. {{ person.given_name }} is a {{ current_role.role }} at the {{ current_role.institution }} ({{ current_role.location }}) and head of the {{ person.led_group.name }} ({{ person.led_group.url }}).
+
+This file follows the llms.txt convention (https://llmstxt.org). A single plain-text version of the whole site, suited to language models, is available at {{ '/llms-full.txt' | absolute_url }}.
+
+## Pages
+{% assign nav_pages = site.pages | where_exp: "item", "item.nav_order" | sort: "nav_order" %}
+{%- for item in nav_pages %}
+- [{{ item.nav_label | default: item.title }}]({{ item.url | absolute_url }}): {{ item.description }}
+{%- endfor %}
+
+## Full text
+
+- [llms-full.txt]({{ '/llms-full.txt' | absolute_url }}): Profile, experience, education, awards, skills, research themes, projects, software, and the complete publication list as Markdown.
+
+## Optional
+{% assign other_pages = site.pages | where_exp: "item", "item.nav_order == nil" | where_exp: "item", "item.description" %}
+{%- for item in other_pages %}
+- [{{ item.title }}]({{ item.url | absolute_url }}): {{ item.description }}
+{%- endfor %}
+{%- for item in site.data.subsites %}
+- [{{ item.title }}]({{ item.url }}){% if item.description %}: {{ item.description }}{% endif %}{% if item.llms %} (LLM notes: {{ item.llms }}){% endif %}
+{%- endfor %}
+{%- for item in person.social %}
+- [{{ item.label }}]({{ item.url }})
+{%- endfor %}

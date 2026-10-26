@@ -1,5 +1,6 @@
 ---
-title: About Me
+title: Mathieu Gravey
+heading: About Me
 layout: page
 permalink: /
 description: Mathieu Gravey is a researcher working across geoscience, remote sensing, geostatistics, and scientific computing.
@@ -19,7 +20,7 @@ nav_label: About
       <p class="intro-copy">
         I am a {{ current_role.role }} at
         <a href="{{ current_role.url }}">{{ current_role.institution }}</a> in {{ current_role.location }},
-        and head of the <a href="https://digital-landscape.at/" data-barba-prevent="all">Digital Landscape Group</a>.
+        and head of the <a href="{{ site.data.person.led_group.url }}" data-barba-prevent="all">{{ site.data.person.led_group.name }}</a>.
         My {{ phd.degree }} from <a href="{{ phd.url }}">{{ phd.institution }}</a> focused on geostatistics,
         which remains a core pillar of my work.
       </p>

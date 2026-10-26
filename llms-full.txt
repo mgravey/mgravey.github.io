@@ -1,0 +1,86 @@
+---
+layout: null
+permalink: /llms-full.txt
+sitemap: false
+---
+{%- assign person = site.data.person -%}
+{%- assign full_name = person.given_name | append: ' ' | append: person.family_name -%}
+{%- assign current_role = site.data.cv.experience | where: 'id', person.current_experience_id | first -%}
+# {{ full_name }}
+
+> {{ person.headline }}.
+
+Plain-text version of {{ '/' | absolute_url }} for language models and other automated readers. Generated {{ site.time | date: '%Y-%m-%d' }}.
+
+## Profile
+
+- Current position: {{ current_role.role }}, {{ current_role.institution }}, {{ current_role.location }} ({{ current_role.url }})
+- Leads: {{ person.led_group.name }} ({{ person.led_group.url }})
+- Focus areas: {% for area in person.focus_areas %}{{ area.title }} ({{ area.items | join: ', ' }}){% unless forloop.last %}; {% endunless %}{% endfor %}
+- Current work: {{ person.current_work }}
+- Profiles: {% for item in person.social %}{{ item.label }} {{ item.url }}{% unless forloop.last %}; {% endunless %}{% endfor %}
+- Contact: {{ '/contact/' | absolute_url }} (journal editors: {{ '/for-editors/' | absolute_url }})
+
+## Experience
+{% for item in site.data.cv.experience %}
+- {{ item.display_date }}: {{ item.role }}, {{ item.institution }}{% if item.location %} ({{ item.location }}){% endif %}. {{ item.details }}
+{%- endfor %}
+
+## Education
+{% for item in site.data.cv.education %}
+- {{ item.display_date }}: {{ item.degree }}, {{ item.institution }}. {{ item.details }}
+{%- endfor %}
+
+## Prizes and Awards
+{% for item in site.data.cv.awards %}
+- {{ item.year }}: {{ item.title }} ({{ item.organization }})
+{%- endfor %}
+
+## Skills
+
+- Programming: {% for item in site.data.cv.skills.programming %}{{ item.name }} ({{ item.level }}){% unless forloop.last %}, {% endunless %}{% endfor %}
+- Interfacing: {{ site.data.cv.skills.interfacing | join: ', ' }}
+- Software: {{ site.data.cv.skills.software | join: ', ' }}
+- Languages: {% for item in site.data.cv.skills.languages %}{{ item.name }} ({{ item.level }}){% unless forloop.last %}, {% endunless %}{% endfor %}
+
+{% assign research = site.pages | where: 'url', '/research/' | first -%}
+## Research
+
+{{ research.content | llm_markdown }}
+
+{% assign kinds = "project,software" | split: "," -%}
+{% for kind in kinds -%}
+{%- assign items = site.data.portfolio | where_exp: "item", "item.types contains kind" | sort: 'rank' -%}
+## {% if kind == 'project' %}Projects{% else %}Software{% endif %}
+{% for item in items %}
+### {{ item.title }}{% if item.years.start %} ({{ item.years.start }}{% if item.years.finish and item.years.finish != item.years.start %}–{{ item.years.finish }}{% elsif item.years.finish == nil %}–present{% endif %}){% endif %}
+
+{{ item.description }}
+{%- if item.links.size > 0 %}
+{% for link in item.links %}
+- {{ link.label }}: {% if link.url contains '://' %}{{ link.url }}{% else %}{{ link.url | absolute_url }}{% endif %}
+{%- endfor %}
+{%- endif %}
+{% endfor %}
+{% endfor -%}
+
+## Publications
+{% assign years = site.data.publications | map: 'year' | uniq | sort | reverse %}
+{%- for y in years %}
+
+### {{ y }}
+{% for p in site.data.publications %}{% if p.year == y %}
+- {% for a in p.authors %}{{ a.family }}, {{ a.given }}{% unless forloop.last %}; {% endunless %}{% endfor %} ({{ p.year }}). {{ p.title | strip_html | replace: '&amp;', '&' }}. *{{ p.venue | replace: '&amp;', '&' }}*. https://doi.org/{{ p.doi }}
+{%- endif %}{% endfor %}
+{%- endfor %}
+
+{% assign prose_urls = "/advices/,/4students/,/for-editors/,/why-did-i-email-you/" | split: "," -%}
+{% for url in prose_urls -%}
+{%- assign prose = site.pages | where: 'url', url | first -%}
+## {{ prose.title }}
+
+Source: {{ prose.url | absolute_url }}
+
+{{ prose.content | llm_markdown }}
+
+{% endfor -%}

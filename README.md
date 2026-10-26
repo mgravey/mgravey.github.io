@@ -15,6 +15,7 @@ Reusable information is maintained once:
 - `_data/taxonomy.yml` — tag labels, groups, filter visibility, and logos.
 - Page front matter — each page’s title, permalink, description, background, and navigation order.
 - `_data/nav.yml` — external navigation entries only. Viewpoints intentionally remains a separate site.
+- `_data/subsites.yml` — other GitHub Pages sites under `www.mgravey.com/…`, listed in `/sitemap.xml` and `/llms.txt`.
 
 Page-specific essays and guidance stay in their Markdown pages. Do not copy
 profile, CV, publication, project, or software facts into page prose.
@@ -69,7 +70,22 @@ using the keys in `_data/taxonomy.yml`. Use `npm run publications -- --refresh`
 to refresh existing metadata; this does not discover new publications.
 
 Original photographs live under `assets/source-images`. The asset task produces
-WebP copies below the enforced transfer-size limits.
+WebP copies below the enforced transfer-size limits, plus a JPEG portrait for
+link previews.
+
+## Search engines and LLMs
+
+- `_includes/structured-data.html` adds schema.org JSON-LD: a `Person` on the
+  homepage and the publication list as `ScholarlyArticle`s.
+- `/sitemap.xml` is a sitemap index: `/sitemap-pages.xml` (this site plus
+  sub-sites without a sitemap) and each sub-site's own `sitemap.xml`, detected
+  at build time by `_plugins/subsites.rb`, which also reads each sub-site's
+  last-modified date, description and `llms.txt`. Rebuild after a sub-site
+  changes.
+- `/llms.txt` (an index) and `/llms-full.txt` (the whole site as compact
+  Markdown) are generated from the same data files and pages, so they need no
+  separate maintenance. `_plugins/llms_text.rb` renders `llms-full.txt` last
+  and converts embedded page HTML back to Markdown.
 
 ## Tests
 
