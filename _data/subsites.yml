@@ -6,6 +6,8 @@
 # pick it up. Any of `sitemap`, `lastmod`, `description`, `llms` set here wins.
 - title: Viewpoints
   url: https://mgravey.com/viewpoints/
+- title: EGU Session Finder
+  url: https://mgravey.com/egu-session-finder/
 - title: QS browser preview (mps.online)
   url: https://mgravey.com/mps.online/
 - title: Integration effect on gender ratio
