@@ -22,3 +22,13 @@ AI produces answers that sound right but can be wrong. Don't take any output
 at face value. This works together with the feeling for orders of magnitude:
 if you already expect roughly what the result should look like, you see right
 away when something is wrong, before you even check the details.
+
+### Responsibility — important, less critical than critical thinking
+You sign the result, not the tool. Understand what you put your name on.
+
+### Thinking about limits and what is comparable
+Ask fundamentally what can be compared with what, and where the limits are.
+- Where does a limit come from: is it human-made (convention, definition,
+  our own knowledge or tools) or set by nature?
+- Is it our own limit, or a fundamental boundary between things?
+- How sharp or blurry is it: a hard cutoff, or a gradual transition?
