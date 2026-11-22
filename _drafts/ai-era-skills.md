@@ -16,3 +16,9 @@ checking the details.
 ### Interdisciplinarity
 Be curious about a little bit of everything. Knowing the basics of many fields
 lets you connect ideas across them and judge answers outside your own specialty.
+
+### Critical thinking — very, very important
+AI produces answers that sound right but can be wrong. Don't take any output
+at face value. This works together with the feeling for orders of magnitude:
+if you already expect roughly what the result should look like, you see right
+away when something is wrong, before you even check the details.
