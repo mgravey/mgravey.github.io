@@ -49,7 +49,7 @@ module Subsites
 
     def meta_description(html)
       tag = html.to_s.force_encoding("UTF-8")[/<meta\s[^>]*name=["']description["'][^>]*>/mi]
-      content = tag && tag[/content=["']([^"']*)["']/m, 1]
+      content = tag && tag[/content=(["'])(.*?)\1/m, 2] # same closing quote, so "Austria's" survives
       content && CGI.unescapeHTML(content.gsub(/\s+/, " ").strip)
     end
   end
