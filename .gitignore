@@ -13,5 +13,5 @@
 /test-results
 viewpoints
 
-# Temporary catalog written by the publication updater
+# Atomic-write staging catalog; commit only _data/publications.yml
 /_data/publications.yml.tmp

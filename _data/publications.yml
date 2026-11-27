@@ -60,6 +60,95 @@
   - given: Luiz Gustavo
     family: Rasera
     orcid: 0000-0001-6169-5705
+- doi: 10.1038/s41597-026-08873-x
+  flags:
+  - ecology
+  - dataset
+  - rs
+  rank: 9999
+  title: Standardised multi-sensor geolocator data for bird migration ecology
+  year: 2026
+  venue: Scientific Data
+  authors:
+  - given: Raphaël
+    family: Nussbaumer
+  - given: Peter
+    family: Adamík
+    orcid: 0000-0003-1566-1234
+  - given: Fraser
+    family: Bell
+  - given: Than
+    family: Boves
+  - given: Martins
+    family: Briedis
+  - given: Malcolm D.
+    family: Burgess
+  - given: Violeta
+    family: Caballero-Lopez
+  - given: Pablo
+    family: Capilla-Lasheras
+  - given: Andrea
+    family: Contina
+    orcid: 0000-0002-0484-6711
+  - given: Nathan W.
+    family: Cooper
+  - given: Peter
+    family: Desmet
+    orcid: 0000-0002-8442-8025
+  - given: Paul
+    family: Doniol-Valcroze
+  - given: Paul
+    family: Dufour
+  - given: Ruben
+    family: Evens
+  - given: Katie J.
+    family: Galletta
+  - given: Mathieu
+    family: Gravey
+    orcid: 0000-0002-0871-1507
+  - given: Anders
+    family: Hedenström
+  - given: Wieland
+    family: Heim
+  - given: Barbara
+    family: Helm
+  - given: Frédéric
+    family: Jiguet
+    orcid: 0000-0002-0606-7332
+  - given: Dmitry
+    family: Kishkinev
+  - given: Diane J.
+    family: Klement
+    orcid: '0009-0007-3884-0987'
+  - given: Michiel
+    family: Lathouwers
+  - given: Felix
+    family: Liechti
+    orcid: 0000-0001-9473-0837
+  - given: Pablo
+    family: Macías-Torres
+    orcid: 0000-0002-4503-164X
+  - given: Petr
+    family: Procházka
+    orcid: 0000-0001-9385-4547
+  - given: Garrett
+    family: Rhyne
+  - given: Yann
+    family: Rime
+  - given: Clark
+    family: Rushing
+  - given: Sissel
+    family: Sjöberg
+  - given: Stephanie
+    family: Szarmach
+  - given: Michael
+    family: Ward
+  - given: Joanna B.
+    family: Wong
+    orcid: 0000-0003-4607-2803
+  - given: Tianhao
+    family: Zhao
+    orcid: 0000-0002-6500-4526
 - doi: 10.1134/s1064229325603130
   flags:
   - mps

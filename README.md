@@ -62,6 +62,8 @@ npm run publications -- 10.xxxx/example
 
 Review the updated `_data/publications.yml`, add any local flags or rank, run
 `npm run validate`, and commit the resulting single catalog.
+Check the title, publication year, journal, and full author order against the
+publisher's article page before committing.
 
 You can pass multiple DOIs (or full DOI URLs) in one command. Existing DOIs
 are skipped case-insensitively, so a mixed list of new and existing publications

@@ -2,6 +2,7 @@
 
 ## Unreleased
 
+- Added “Standardised multi-sensor geolocator data for bird migration ecology” (Scientific Data, 2026; DOI: 10.1038/s41597-026-08873-x) to the publication catalog with ecology, dataset, and remote-sensing flags.
 - Integrated Mathieu's Digital Landscape Group leadership into the opening biography.
 - Upgraded local development and GitHub Actions from Ruby 3.2 to Ruby 4.0.
 - Consolidated profile, CV, portfolio, publication, taxonomy, contact, and navigation data.
